@@ -1,0 +1,600 @@
+
+## HTML ##
+
+1. HTML
+2. Modern Web Design
+3. HTML basics file
+4. HTML Elements
+5. HTML Attributes
+6. html image <img> tag.
+7. html links <a> tag
+8. HTML Lists
+9. HTML Tables
+10. HTML Inline and Block Elements
+11. HTML Form tag
+12. HTML Colors
+13. HTML The <frame> Tag
+
+.
+1. HTML - 
+HTML is HyperText Markup Language. 
+html use a markup language uses tags to identify content. 
+.
+.
+2. Modern Web Design -
+HTML: Structure
+CSS: Presentation
+JavaScript: Behavior
+
+PHP / spring boots / Node.js: Backend
+CMS: Content Management
+.
+.
+3. HTML basics file -
+
+--- example:
+
+    <html>
+        <head>
+        </head>
+        <body>
+        </body>
+        <footer>
+        </footer>
+    </html>
+
+
+--- example: html template file
+    <03.01_template.html>
+.
+.
+4. HTML Elements - 
+
+-- HTML documents are made up of HTML elements.
+   An HTML element is written using a start tag and an end tag, and with the content in between.
+
+   <p>content in between tags</p>
+
+-!- Some HTML elements (like the <br /> tag) do not have end tags.
+
+.
+.
+5. HTML Attributes -
+.
+
+-- Attributes provide additional information about an element or a tag, 
+   while also modifying them. Most attributes have a value; the value modifies the attribute.
+
+--- example: Attributes: align="center" 
+
+    <p align="center"> 
+        This text is aligned to center
+    </p>
+    <p>
+        <hr width="50px" />
+        <hr width="50%" />
+        <hr width="10%" align="right" />  some text.
+        <hr width="50%" align="left" />
+    </p>
+
+--- example: HTML Attributes
+    <04.01_Attributes.html>
+    <05.01_tag__hr.html>
+.
+.
+6. html image <img> tag -
+.
+
+-- The <img> tag is used to insert an image. 
+
+--- example: html image <img> tag
+
+    <!-- image - file name -->
+    <img src="image.jpg" />
+
+    <!-- alt=" -->
+    <img src="image.jpg" alt="image.jpg - file is missing" />
+
+    <!-- image size - px -->
+    <img src="image.jpg" height="150px" width="150px" alt="" />
+    
+    <!-- image size - % -->    
+    <img src="image.jpg" height="50%" width="50%" alt="" />
+
+    <!-- image border size - px -->
+    <img src="image.jpg" height="150px" width="150px" border="1px" alt="" /> 
+
+
+--- example: html image <img> tag
+    <06.01_tag__img.html>
+
+.
+.
+7. html links <a> tag -
+.
+
+-- Links are also an integral part of every web page. 
+   You can add links to text or images that will enable the user to click on them in order to be directed to another file or webpage.
+   In HTML, links are defined using the <a> tag.
+
+-!- To link an image to another document, simply nest the <img> tag inside <a> tags.
+
+--- example:
+    
+    <!-- links - a tag -->
+    <a href=""></a>
+
+    <br /><a href="https://ofekbytes.github.io/assets/kessler.yaron/kessler.yaron.jpeg"> jron picture in site </a>
+
+    <!-- link into a new browser tab -->
+    <br /><a href="https://ofekbytes.github.io/assets/" target="_blank"> jron assets site :-) </a>
+
+    <!-- links - a image -->
+    <br />
+    <a href="https://ofekbytes.github.io/assets/" target="_blank">
+        <img src="https://ofekbytes.github.io/assets/images/picture/yamon.jpg" height="150px" width="150px" border="11px" alt="yamon" /> 
+    </a>
+
+--- example: html image <img> tag
+    <07.01_tag__a.html>
+
+.
+.
+8. HTML Lists - 
+.
+
+- HTML Ordered List
+
+-- The list items will be automatically marked with numbers.
+
+--- example: Ordered Lists
+
+
+
+- HTML Unordered List
+
+-- The list items will be marked with circles.
+
+--- example: Unordered Lists
+
+    <ul>
+        <li>one</li>
+        <li>two</li>
+        <li>three</li>
+    </ul>  
+
+--- example:HTML Lists (Ordered List, Unordered Lists)
+    <08.01_tag__ol__ul.html>
+
+.
+.
+9. HTML Tables
+.
+
+- <table> tag. 
+-- Tables are divided into table rows with the <tr> tag.
+-- Table rows are divided into table columns (table data) with the <td> tag.
+
+--- example: table, tr, td
+
+    <h3>border= 1 row=1, cell=3</h3>
+    <table>
+        <tr>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+        </tr>
+    </table>
+
+
+--- example: table border size
+
+    <h3>border=2 row=1, cell=3</h3>
+    <table border="2">
+        <tr>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+        </tr>
+    </table>
+
+
+--- example: table border size
+
+    <h3>border=2 row=2, cell=3</h3>        
+    <table border="2">
+        <tr>
+            <td>one</td>
+            <td>two</td>
+            <td>three</td>
+        </tr>
+        <tr>
+            <td> one </td>
+            <td> two</td>
+            <td> three</td>
+        </tr>
+    </table>
+
+
+-!- The border attribute is not supported in HTML5.
+
+
+--- example: colspan - spans two cells into one (cell 2 to 1).
+
+    <h3>border=2 row=2, cell=3, 2</h3>                
+    <table border="2">
+        <tr>
+            <td>one</td>
+            <td>two</td>
+            <td>three</td>
+        </tr>
+        <tr>
+            <td> one </td>
+            <td colspan="2"> two &nbsp; three</td>
+        </tr>
+    </table>
+
+
+--- example: rowspan - rowspan Attribute
+
+    <h3>border=2 row=3,rowspan=3</h3>
+        <table border="2">
+            <tr>
+                <td>one</td>
+                <td>two</td>
+                <td>three</td>
+                <td rowspan="3">rowspan <br /> is <br /> three </td>
+            </tr>
+            <tr>
+                <td>one</td>
+                <td>two</td>
+                <td>three</td>
+            </tr>
+            <tr>
+                <td>one</td>
+                <td>two</td>
+                <td>three</td>
+            </tr>
+        </table>
+
+
+--- example: HTML Table tag
+    <09.01_tag__table.html>
+    <09.02_tag__table.html>
+
+--- html <table> links -
+
+
+<!-- <table> example -->
+https://developer.mozilla.org/en-US/docs/Learn/HTML/Tables
+
+https://developer.mozilla.org/en-US/docs/Learn/HTML/Tables/Basics
+
+<!-- td, tr ...->
+https://www.w3schools.com/tags/tag_td.asp
+https://www.w3schools.com/tags/tag_tr.asp
+
+.
+.
+10. HTML Inline and Block Elements
+.
+
+- In HTML, most elements are defined as block level or inline elements.
+
+-- Block Elements - 
+   Block level elements start from a new line. 
+
+--- example: 
+    <h1>, <form>, <li>, <ol>, <ul>, <p>, <pre>, <table>, <div>, etc.
+
+
+-- Inline Elements - 
+   Inline elements are normally displayed without line breaks. 
+
+--- example: 
+    <b>, <a>, <strong>, <img>, <input>, <em>, <span>, etc.
+
+
+-- <div> element is a block-level element (used as a container for other HTML elements).
+   <div> with some CSS styling, can be used to style blocks of content:
+
+--- example: block level element with <p> elements.
+    <div>
+        <p>Some paragraph text goes here.</p>
+        <p>Another paragraph goes here.</p>
+    </div>
+
+
+--- example: some text with <span> elements.
+    <span>This </span> is <span>nice</span> color 
+    
+
+--- example: inline block -and- block Elements.
+    <10.01_tag__inline_block-and-block_Elements.html>
+
+
+-!!!-
+-!-  The <div> element defines a block-level section in a document.
+-!-  The <span> element defines an inline section in a document.
+
+
+-- Types of Elements - 
+--- elements can be used either as "block" level elements -or- "inline" elements
+--- element list:
+    APPLET  -  embedded Java applet
+    IFRAME  -  Inline frame
+    INS     -  inserted text
+    MAP     -  image map
+    OBJECT  -  embedded object
+    SCRIPT  -  script within an HTML document
+
+-!- You can insert inline elements inside block elements. 
+
+--- example, multiple <span> elements inside a <div> element.
+
+    <div>
+        <span>This </span> is <span>nice</span> color
+        <span>This </span> is <span>nice</span> color        
+    </div>
+
+-!- Inline elements cannot contain any block level elements.
+
+
+- Block Elements List -->
+
+<address>  -  Contact information.
+<article>  -  Article content.
+<aside>  -  Aside content.
+<blockquote>  -  Long ("block") quotation.
+<details>  -  Disclosure widget.
+<dialog>  -  Dialog box.
+<dd>  -  Describes a term in a description list.
+<div>  -  Document division.
+<dl>  -  Description list.
+<dt>  -  Description list term.
+<fieldset>  -  Field set label.
+<figcaption>  -  Figure caption.
+<figure>  -  Groups media content with a caption (see <figcaption>).
+<footer>  -  Section or page footer.
+<form>  -  Input form.
+<h1>, <h2>, <h3>, <h4>, <h5>, <h6>  -  Heading levels 1-6.
+<header>  -  Section or page header.
+<hgroup>  -  Groups header information.
+<hr>  -  Horizontal rule (dividing line).
+<li>  -  List item.
+<main>  -  Contains the central content unique to this document.
+<nav>  -  Contains navigation links.
+<ol>  -  Ordered list.
+<p>  -  Paragraph.
+<pre>  -  Preformatted text.
+<section>  -  Section of a web page.
+<table>  -  Table.
+<ul>  -  Unordered list.
+
+--- <01.02.html-4-Block-Elements-List.txt>
+
+
+- Inline Elements
+
+<a>
+<abbr>
+<acronym>
+<audio> (if it has visible controls)
+<b>
+<bdi>
+<bdo>
+<big>
+<br>
+<button>
+<canvas>
+<cite>
+<code>
+<data>
+<datalist>
+<del>
+<dfn>
+<em>
+<embed>
+<i>
+<iframe>
+<img>
+<input>
+<ins>
+<kbd>
+<label>
+<map>
+<mark>
+<meter>
+<noscript>
+<object>
+<output>
+<picture>
+<progress>
+<q>
+<ruby>
+<s>
+<samp>
+<script>
+<select>
+<slot>
+<small>
+<span>
+<strong>
+<sub>
+<sup>
+<svg>
+<template>
+<textarea>
+<time>
+<u>
+<tt>
+<var>
+<video>
+<wbr>
+
+--- <01.03.html-4-Inline-Elements-List.txt>
+
+.
+.
+11. HTML Form tag - 
+.
+
+- The <form> Element (block element) - 
+-- form tags used to collect information from the user.
+
+   <form >
+   </form>
+   
+
+-- action attribute point to a webpage that will load after the user submits the form.
+
+   <form action="https://ofekbytes.github.io/assets/">
+   </form>
+
+
+-!- Usually the form is submitted to a web page on a web server.
+
+
+-- The "method" attribute specifies the HTTP method (GET or POST) to be used 
+   when form are submitted :
+
+   <form action="url" method="GET">
+
+   <form action="url" method="POST">
+
+--- example: 
+
+   <h1>form</h1>
+
+    <form action="https://ofekbytes.github.io/assets/" method="POST">
+    </form>
+
+
+-!- When you use GET, the form data will be visible in the page address.
+
+-!- Use POST if the form is updating data, or includes sensitive information (passwords).
+    POST offers better security because the submitted data is not visible in the page address.
+
+-- html <input> tag take in user input, such as text fields. 
+   The <input> element has many variations, depending on the type attribute. 
+   (text, password, radio, URL, submit, etc) 
+
+--- example: a form requesting a username and password:
+    <form>
+        <input type="text" name="username" /><br />
+        <input type="password" name="password" />
+    </form>
+
+-!- The "name" attribute specifies a name for a form.
+
+
+-- input type "radio"
+
+   <input type="radio" name="gender" value="male" /> Male <br />
+   <input type="radio" name="gender" value="female" /> Female <br />
+
+
+-- input type "checkbox"
+
+   <input type="checkbox" name="gender" value="1" /> Male <br />
+   <input type="checkbox" name="gender" value="2" /> Female <br />
+
+-!- The <input> tag has no end tag (tag like "</input> NOT exists").
+
+
+-- The "submit" button submits a form to its action attribute:
+   <input type="submit" value="Submit" /> 
+
+-!- After the form is submitted, the data should be processed on the server 
+    using a programming language, such as PHP.
+
+
+
+
+<!-- html <form> links -->
+
+<!-- form -->
+https://developer.mozilla.org/en-US/docs/Learn/HTML/Forms
+
+.
+.
+12. HTML Colors - 
+.
+
+- HTML colors values are a hexadecimal values: 0-F.
+-- (0 - F) -- 0,1,2,3,4,5,6,7,8,9,A,B,C,D,E,F
+
+- HTML Color Model
+-- Colors are displayed in combinations of red, green, and blue light (RGB).
+-- Hex values are written using the hashtag symbol (#), followed by either three or six hex characters.
+-!- RGB color values are supported in all browsers.
+
+- Color Values
+-- All of the possible red, green, blue combinations potentially number over 16 million.
+--- example:
+red - #FF0000
+green - #00FF00
+blue - #0000FF
+black - #000000
+gray - #777777
+white - #FFFFFF
+
+orange+red - #C1250F
+
+- Background color -and- Font Colors
+
+-- "bgcolor" attribute can be used to change the web page's background color. 
+
+--- example: white over blue.
+    <12.01_tag__colors-hexadecimal.html>
+
+<body bgcolor="#000099"> <!-- #000099 === navy blue color -->
+    <h1>
+        <font color="#FFFFFF"> White headline </font> <!-- #FFFFFF === white cololr -->
+    </h1>
+</body>
+
+-!- The color attribute specifies the color of the text inside a <font> element.
+
+.
+.
+13. HTML The <frame> Tag - 
+.
+
+-!- The <frameset> tag is not supported in HTML5.
+
+-- A page can be divided into frames using a special frame document. 
+
+-- The <frame> tag defines one specific window (frame) within a <frameset>. 
+   Each <frame> in a <frameset> can have different attributes, such as border, scrolling, the ability to resize, etc. 
+
+-- The <frameset> element specifies the number of columns or rows in the frameset, 
+   as well as what percentage or number of pixels of space each of them occupies.
+
+<frameset cols="100, 25%, *"></frameset>
+<frameset rows="100, 25%, *"></frameset>
+
+-!- The <frameset> tag is not supported in HTML5.
+
+-- "noresize" attribute to specify that a user cannot resize a <frame> element:
+   <frame noresize="noresize">
+
+
+-- "src" attribute is the Frame content file.
+
+-- "noframes" element provides a way for browsers that do not support frames to view the page. 
+   The element can contain an alternative page, complete with a body tag and any other elements.
+
+<frameset cols="25%,50%,25%">
+   <frame src="left.htm" />
+   <frame src="center.htm" />
+   <frame src="right.htm" />
+   <noframes>Frames not supported!</noframes>
+</frameset>
+
+-!- The <frameset> tag is not supported in HTML5.
+
+
+--- example: frameset/frame.
+    <13.01_tag__frameset__frame.html>
+
