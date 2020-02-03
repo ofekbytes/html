@@ -354,7 +354,8 @@ Elements: <article>, <aside>, <nav>, <section>
          Audio element not supported by your browser
     </audio>
 
---- example: <source> tag nest the <audio> tag (<source> tag inside <audio> tag):
+--- example: <source> tag nest the <audio> tag (<source> tag inside <audio> tag) 
+             and display error message if audio no supported:
 
     <audio controls>
         <source src="URL/audio.mp3" type="audio/mpeg">
@@ -367,15 +368,21 @@ Elements: <article>, <aside>, <nav>, <section>
 
 
 - <audio> Attributes
--- controls -
+-- controls - adds video controls, (play, pause, volume).
+-- autoplay - autoplay audio
+-- loop -  play endless times
 
---- example: 
-
-
--- autoplay - 
--- loop - 
-
+--- example: <audio> tag Element .
+    <11.01_tag__audio.html>
 
 
 
+.
+.
+10. HTML5 - <video> tag Element -
 
+----|unsorted part|---
+<video> Attributes
+-- width attributes - set width of video/audio display.
+-- height attributes. 
+-!- If height and width are not set, the page might flicker while the video loads.
