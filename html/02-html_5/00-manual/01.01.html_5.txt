@@ -438,7 +438,7 @@ Elements: <article>, <aside>, <nav>, <section>
 
 .
 .
-13. HTML5 Web Storage - cookie(), sessionStorage(), localStorage()
+13. HTML5 Web Storage (API) - cookie(), sessionStorage(), localStorage()
 
 
 - Capacity
@@ -478,40 +478,6 @@ The Advantages of Web Storage
 .
 - Cookies - 
 
-.
-.
-- Session Storage - 
-
-.
-.
-- Local Storage (localStorage) - 
-
--- Storing a Value:
-   localStorage.setItem("key1", "value1");
-
--- Getting a Value (print value):
-   alert(localStorage.getItem("key1")); 
-
--- Removing a Value:
-   localStorage.removeItem("key1");
-
--- Removing All Values:
-   localStorage.clear();
-
-   
-
-
-
-https://www.youtube.com/watch?v=AwicscsvGLg&t=2s
-
-/* cookies vs local storage vs session storage */
-
-localStorage.setItem('lunch', 'cereal');
-console.log(localStorage.getItem('breakfast'));
-
-localStorage.removeItem('lunch');
-localStorage.clear();
-
 document.cookie = "hello=true";
 document.cookie = "doSomethingOnlyOnce=true; expires=Fri, 31 Dec 9999 23:59:59 GMT";
 document.cookie = "person=beau; expires=Fri, 31 Dec 9999 23:59:59 GMT; path=/"
@@ -519,3 +485,56 @@ document.cookie = "person=beau; expires=Fri, 31 Dec 9999 23:59:59 GMT; path=/"
 document.cookie = "person=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
 
 console.log(document.cookie)
+
+
+.
+.
+- Session Storage - 
+
+-- Storing a Value:
+   sessionStorage.setItem("key1", "value1");
+   sessionStorage.setItem('lunch', 'cereal');
+
+-- Getting a Value (print value):
+   console.log(sessionStorage.getItem("key1")); 
+   console.log(sessionStorage.getItem('breakfast'));
+
+-- Removing a Value:
+   sessionStorage.removeItem("key1");
+   sessionStorage.removeItem('lunch');
+
+-- Removing All Values:
+   sessionStorage.clear();
+
+.
+.
+- Local Storage (localStorage) - 
+
+-- Storing a Value:
+   localStorage.setItem("key1", "value1");
+   localStorage.setItem('lunch', 'cereal');
+
+-- Getting a Value (print value):
+   console.log(localStorage.getItem("key1")); 
+   console.log(localStorage.getItem('breakfast'));
+
+-- Removing a Value:
+   localStorage.removeItem("key1");
+   localStorage.removeItem('lunch');
+
+-- Removing All Values:
+   localStorage.clear();
+
+
+- youtube:
+  https://www.youtube.com/watch?v=AwicscsvGLg&t=2s
+
+
+
+
+
+
+
+
+
+
