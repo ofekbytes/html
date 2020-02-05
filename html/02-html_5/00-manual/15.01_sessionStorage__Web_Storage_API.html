@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <title>sessionStorage Web_Storage_API</title>
+  </head>
+
+  <body>
+      <h1>sessionStorage</h1>
+      <h3>sessionStorage  - Expires On tab close </h3>
+      <script>
+
+          console.log("");
+          console.log("Storing a Value:");
+          sessionStorage.setItem("key1", "value1");
+          sessionStorage.setItem('breakfast', 'cereal');
+
+          console.log("");
+          console.log("Getting a Value:");
+          console.log("key1 ===> " + sessionStorage.getItem("key1")); 
+          console.log("breakfast ===> "+sessionStorage.getItem('breakfast'));
+
+          console.log("");
+          console.log("Removing a Value:");
+          if (sessionStorage.getItem("key1") !== null) {
+            console.log('exist, will be removed');
+            sessionStorage.removeItem("key1");
+            sessionStorage.removeItem("breakfast");
+          }
+          else {
+            console.log('not exist');
+          }
+
+          console.log("");
+          console.log("Gett a Value after erase/delete key/value:");
+          if (sessionStorage.getItem("key1") !== null) {
+              console.log('exist, will be removed');
+              console.log("key1 ===> " + sessionStorage.getItem("key1")); 
+              console.log("breakfast ===> "+sessionStorage.getItem('breakfast'));
+          }
+          else {
+            console.log('not exist');
+          }
+
+         
+          console.log("");
+          console.log("Removing All Values:");
+          sessionStorage.clear();
+
+      </script>
+
+
+  </body>
+
+</html>

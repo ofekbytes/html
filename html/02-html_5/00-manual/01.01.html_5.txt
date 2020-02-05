@@ -478,6 +478,20 @@ The Advantages of Web Storage
 .
 - Cookies - 
 
+-- Cookies are data, stored in small text files, on your computer.
+   When a web server has sent a web page to a browser, the connection is shut down, and the server forgets everything about the user.
+   Cookies were invented to solve the problem "how to remember information about the user":
+   When a user visits a web page, his/her name can be stored in a cookie.
+   Next time the user visits the page, the cookie "remembers" his/her name.
+   Cookies are saved in name-value pairs:
+   When a browser requests a web page from a server, cookies belonging to the page are added to the request. 
+   This way the server gets the necessary data to "remember" information about users.
+
+--- example: username
+    username = 'John Doe';
+
+JavaScript cookies property ("document.cookie") can create, read, delete cookies.
+
 document.cookie = "hello=true";
 document.cookie = "doSomethingOnlyOnce=true; expires=Fri, 31 Dec 9999 23:59:59 GMT";
 document.cookie = "person=beau; expires=Fri, 31 Dec 9999 23:59:59 GMT; path=/"
@@ -493,7 +507,7 @@ console.log(document.cookie)
 
 -- Storing a Value:
    sessionStorage.setItem("key1", "value1");
-   sessionStorage.setItem('lunch', 'cereal');
+   sessionStorage.setItem('breakfast', 'cereal');
 
 -- Getting a Value (print value):
    console.log(sessionStorage.getItem("key1")); 
@@ -501,7 +515,7 @@ console.log(document.cookie)
 
 -- Removing a Value:
    sessionStorage.removeItem("key1");
-   sessionStorage.removeItem('lunch');
+   sessionStorage.removeItem('breakfast');
 
 -- Removing All Values:
    sessionStorage.clear();
@@ -512,7 +526,7 @@ console.log(document.cookie)
 
 -- Storing a Value:
    localStorage.setItem("key1", "value1");
-   localStorage.setItem('lunch', 'cereal');
+   localStorage.setItem('breakfast', 'cereal');
 
 -- Getting a Value (print value):
    console.log(localStorage.getItem("key1")); 
@@ -520,20 +534,37 @@ console.log(document.cookie)
 
 -- Removing a Value:
    localStorage.removeItem("key1");
-   localStorage.removeItem('lunch');
+   localStorage.removeItem('breakfast');
 
 -- Removing All Values:
    localStorage.clear();
 
 
-- youtube:
+- youtube: (Cookies, sessionStorage, localStorage)
   https://www.youtube.com/watch?v=AwicscsvGLg&t=2s
 
 
+url: cookies
+https://www.w3schools.com/js/js_cookies.asp
+https://developer.mozilla.org/en-US/docs/Web/HTTP/Cookies
 
+.
+.
+14. HTML5 Geolocation API
 
+- The HTML 5 Geolocation API is used to locate a user's position.
+  Since this can compromise privacy, the position is not available unless the user approves it.
 
+-!-  Geolocation is most accurate for devices with GPS, like smartphone.
 
+--- example: get Current Position - getCurrentPosition() :
+    navigator.geolocation.getCurrentPosition();
+
+Parameters:
+showLocation (mandatory): Defines the callback method that retrieves location information.
+ErrorHandler(optional): Defines the callback method that is invoked when an error occurs in processing the asynchronous call.
+Options (optional): Defines a set of options for retrieving the location information.
+You need to be familiar with basic JavaScript in order to understand and use the API.
 
 
 
