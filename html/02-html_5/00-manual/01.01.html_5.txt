@@ -10,7 +10,9 @@
 7. HTML5 - <article> tag  (is the <div> tag of html4)
 8. HTML5 - <section> tag Element
 9. HTML5 - <aside> tag Element
-0. HTML5 - <audio> tag Element
+10. HTML5 - <audio> tag Element
+11. HTML5 - <video> tag Element
+12. HTML5 - Progress Bar -  <progress> tag Element -
 
 .
 .
@@ -354,7 +356,8 @@ Elements: <article>, <aside>, <nav>, <section>
          Audio element not supported by your browser
     </audio>
 
---- example: <source> tag nest the <audio> tag (<source> tag inside <audio> tag):
+--- example: <source> tag nest the <audio> tag (<source> tag inside <audio> tag) 
+             and display error message if audio no supported:
 
     <audio controls>
         <source src="URL/audio.mp3" type="audio/mpeg">
@@ -363,18 +366,205 @@ Elements: <article>, <aside>, <nav>, <section>
     </audio>
 
 
--!- <audio> tag support 3 file formats: MP3, WAV, OGG.
+- <audio> tag support 3 file formats: 
+-- MP3 --  type="audio/mpeg"
+-- WAV --  type="audio/wav"
+-- OGG --  type="audio/ogg"
 
 
 - <audio> Attributes
--- controls -
+-- autoplay - start playing audio as soon as it is ready.
+-- controls - display audio controls, (play, pause, volume).
+-- loop -  play audio endless times
+-- muted - audio output should be muted.
+-- preload - audio loaded when the page loads.
 
---- example: 
+--- example: <audio> tag Element .
+    <11.01_tag__audio.html>
+
+.
+.
+11. HTML5 - <video> tag Element -
+
+- The HTML5 <video> element specifies a standard for embedding video in a web page.
+
+- <video> tag support 3 file formats: 
+-- MP4  --  type="video/mp4"
+-- WebM --  type="video/WebM"
+-- OGG  --  type="video/ogg"
+
+--- example: video tag + controls Attributes
+
+    <video controls>
+        <source src="https://ofekbytes.github.io/assets/videos/sea.mp4" type="video/mp4">
+        <source src="https://ofekbytes.github.io/assets/videos/sea.webm" type="video/WebM">
+        Your browser does not support the video element.
+    </video>
 
 
--- autoplay - 
--- loop - 
+- <video> Attributes
+-- autoplay - start playing audio as soon as it is ready.
+-- controls - display audio controls, (play, pause, volume).
+-- loop -  play audio endless times
+-- muted - audio output should be muted.
+-- preload - audio loaded when the page loads.
+-- width - width of video display.
+-- height - height of video display.
+-!- If height and width are not set, the page might flicker while the video loads.
 
+
+--- example: <video> tag Element .
+    <12.01_tag__video.html>
+
+.
+.
+12. HTML5 - Progress Bar -  <progress> tag Element -
+
+
+- The HTML5 <progress> element provides the ability to create progress bars on the web.
+
+--- example: Progress Bar
+
+    Downloading progress:
+    <progress value="22" max="100"></progress>
+
+- <progress> Attributes
+-- Value: (current number value) - Specifies how much of the task has been completed.
+-- Max: (total/max number value) -  Specifies how much work the task requires in total.
+
+--- example: <video> tag Element .
+    <13.01_tag__progress.html>
+
+
+.
+.
+13. HTML5 Web Storage (API) - cookie(), sessionStorage(), localStorage()
+
+
+- Capacity
+-- Cookies - 4kb
+-- Session Storage - 5mb
+-- Local Storage - 10mb
+.
+.
+- Expires
+-- Cookies - Manually set	
+-- Session Storage - On tab close
+-- Local Storage - Never (no expiration date)
+.
+.
+- Storage Location
+-- Cookies - Browser and server	
+-- Session Storage - Browser only
+-- Local Storage - Browser only
+.
+.
+- Sent with requests
+-- Cookies - Yes
+-- Session Storage - No
+-- Local Storage - No
+.
+.
+The Advantages of Web Storage
+- More secure
+- Faster
+- Stores a larger amount of data
+- Stored data is not sent with every server request
+
+-!- Local storage is per domain. 
+    All pages from one domain can store and access the same data.
+
+.
+.
+- Cookies - 
+
+-- Cookies are data, stored in small text files, on your computer.
+   When a web server has sent a web page to a browser, the connection is shut down, and the server forgets everything about the user.
+   Cookies were invented to solve the problem "how to remember information about the user":
+   When a user visits a web page, his/her name can be stored in a cookie.
+   Next time the user visits the page, the cookie "remembers" his/her name.
+   Cookies are saved in name-value pairs:
+   When a browser requests a web page from a server, cookies belonging to the page are added to the request. 
+   This way the server gets the necessary data to "remember" information about users.
+
+--- example: username
+    username = 'John Doe';
+
+JavaScript cookies property ("document.cookie") can create, read, delete cookies.
+
+document.cookie = "hello=true";
+document.cookie = "doSomethingOnlyOnce=true; expires=Fri, 31 Dec 9999 23:59:59 GMT";
+document.cookie = "person=beau; expires=Fri, 31 Dec 9999 23:59:59 GMT; path=/"
+
+document.cookie = "person=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
+
+console.log(document.cookie)
+
+
+.
+.
+- Session Storage - 
+
+-- Storing a Value:
+   sessionStorage.setItem("key1", "value1");
+   sessionStorage.setItem('breakfast', 'cereal');
+
+-- Getting a Value (print value):
+   console.log(sessionStorage.getItem("key1")); 
+   console.log(sessionStorage.getItem('breakfast'));
+
+-- Removing a Value:
+   sessionStorage.removeItem("key1");
+   sessionStorage.removeItem('breakfast');
+
+-- Removing All Values:
+   sessionStorage.clear();
+
+.
+.
+- Local Storage (localStorage) - 
+
+-- Storing a Value:
+   localStorage.setItem("key1", "value1");
+   localStorage.setItem('breakfast', 'cereal');
+
+-- Getting a Value (print value):
+   console.log(localStorage.getItem("key1")); 
+   console.log(localStorage.getItem('breakfast'));
+
+-- Removing a Value:
+   localStorage.removeItem("key1");
+   localStorage.removeItem('breakfast');
+
+-- Removing All Values:
+   localStorage.clear();
+
+
+- youtube: (Cookies, sessionStorage, localStorage)
+  https://www.youtube.com/watch?v=AwicscsvGLg&t=2s
+
+
+url: cookies
+https://www.w3schools.com/js/js_cookies.asp
+https://developer.mozilla.org/en-US/docs/Web/HTTP/Cookies
+
+.
+.
+14. HTML5 Geolocation API
+
+- The HTML 5 Geolocation API is used to locate a user's position.
+  Since this can compromise privacy, the position is not available unless the user approves it.
+
+-!-  Geolocation is most accurate for devices with GPS, like smartphone.
+
+--- example: get Current Position - getCurrentPosition() :
+    navigator.geolocation.getCurrentPosition();
+
+Parameters:
+showLocation (mandatory): Defines the callback method that retrieves location information.
+ErrorHandler(optional): Defines the callback method that is invoked when an error occurs in processing the asynchronous call.
+Options (optional): Defines a set of options for retrieving the location information.
+You need to be familiar with basic JavaScript in order to understand and use the API.
 
 
 
