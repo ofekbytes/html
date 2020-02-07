@@ -13,6 +13,8 @@
 10. HTML5 - <audio> tag Element
 11. HTML5 - <video> tag Element
 12. HTML5 - Progress Bar -  <progress> tag Element -
+13. HTML5 Web Storage (API) - cookie(), sessionStorage(), localStorage()
+14. HTML5 Geolocation API
 
 .
 .
@@ -567,5 +569,5 @@ Options (optional): Defines a set of options for retrieving the location informa
 You need to be familiar with basic JavaScript in order to understand and use the API.
 
 
-
-
+url: geolocation
+https://www.w3schools.com/html/html5_geolocation.asp
