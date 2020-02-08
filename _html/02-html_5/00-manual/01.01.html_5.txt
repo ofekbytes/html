@@ -554,10 +554,9 @@ https://developer.mozilla.org/en-US/docs/Web/HTTP/Cookies
 .
 14. HTML5 Geolocation API
 
-- The HTML 5 Geolocation API is used to locate a user's position.
+- The HTML 5 Geolocation API is used to locate a user's position .
   Since this can compromise privacy, the position is not available unless the user approves it.
 
--!-  Geolocation is most accurate for devices with GPS, like smartphone.
 
 --- example: get Current Position - getCurrentPosition() :
     navigator.geolocation.getCurrentPosition();
