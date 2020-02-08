@@ -19,6 +19,7 @@
             function getLocation() {
                 //Check if Geolocation is supported
                 if (navigator.geolocation) {
+                    currentLocation.innerHTML = "please wait";
                     // yes supported -> get Current Position
                     navigator.geolocation.getCurrentPosition(showPosition);
                 } else {
