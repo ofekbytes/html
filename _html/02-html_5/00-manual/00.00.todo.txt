@@ -1,0 +1,33 @@
+
+## todo ## 
+
+1. HTML 5
+2. HTML5 - New Elements in HTML5
+3. HTML5 - The List of Content Models
+4. HTML5 - header tag
+5. HTML5 - footer tag
+6. HTML5 - nav tag
+7. HTML5 - <article> tag  (is the <div> tag of html4)
+8. HTML5 - <section> tag Element
+9. HTML5 - <aside> tag Element
+10. HTML5 - <audio> tag Element
+11. HTML5 - <video> tag Element
+12. HTML5 - Progress Bar -  <progress> tag Element -
+
+13. HTML5 Web Storage (API) - cookie(), sessionStorage(), localStorage()
+*** complite this chapter 
+*** add tag/s Attributes
+*** add rtfm-url-links
+
+14. HTML5 Geolocation API
+*** complite this chapter 
+*** add tag/s Attributes
+*** add rtfm-url-links
+
+***
+*** create a diffrent file for "rtfm url/s" ****
+***
+
+***
+*** examples - create more examples ***
+***

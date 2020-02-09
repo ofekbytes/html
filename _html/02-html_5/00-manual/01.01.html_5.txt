@@ -565,7 +565,17 @@ Parameters:
 showLocation (mandatory): Defines the callback method that retrieves location information.
 ErrorHandler(optional): Defines the callback method that is invoked when an error occurs in processing the asynchronous call.
 Options (optional): Defines a set of options for retrieving the location information.
-You need to be familiar with basic JavaScript in order to understand and use the API.
+
+
+Presenting Data in 2/two ways: Geodetic -and- Civic.
+
+1. geodetic - describe position latitude -and- longitude.
+2. civic - describe location data.
+
+-- getCurrentPosition() method returns an object (latitude, longitude, accuracy properties).
+
+--- example: 
+
 
 
 url: geolocation
