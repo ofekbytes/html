@@ -12,9 +12,10 @@
 9. HTML5 - <aside> tag Element
 10. HTML5 - <audio> tag Element
 11. HTML5 - <video> tag Element
-12. HTML5 - Progress Bar -  <progress> tag Element -
-13. HTML5 Web Storage (API) - cookie(), sessionStorage(), localStorage()
-14. HTML5 Geolocation API
+12. HTML5 - <progress> tag Element (Progress-Bar) -
+13. HTML5 - API - Web Storage - cookie(), sessionStorage(), localStorage()
+14. HTML5 - API - Geolocation (GPS)
+15. HTML5 - API - Drag -and- Drop
 
 .
 .
@@ -27,6 +28,7 @@
 <meta charset="UTF-8">
 
 -!- The default character encoding in HTML5 is UTF-8.
+
 .
 .
 2. HTML5 - New Elements in HTML5 - 
@@ -47,6 +49,7 @@
 -- Local Storage
 -- Geolocation
 -- Web Messaging
+
 .
 .
 3. HTML5 - The List of Content Models - 
@@ -107,6 +110,7 @@ Elements: <article>, <aside>, <nav>, <section>
 
 --- example: A generic HTML5 page structure looks like this:
     <HTML5-page-structure.png>
+
 .
 .
 4. HTML5 - header tag -
@@ -309,6 +313,7 @@ Elements: <article>, <aside>, <nav>, <section>
 -!- If it makes sense to separately syndicate/unate the content of a <section> element, use an <article> element instead.
 
 -!- separated text subject separated <article> tag
+
 .
 .
 9. HTML5 - <aside> tag Element - 
@@ -437,11 +442,9 @@ Elements: <article>, <aside>, <nav>, <section>
 --- example: <video> tag Element .
     <13.01_tag__progress.html>
 
-
 .
 .
-13. HTML5 Web Storage (API) - cookie(), sessionStorage(), localStorage()
-
+13. HTML5 - API - Web Storage - cookie(), sessionStorage(), localStorage()
 
 - Capacity
 -- Cookies - 4kb
@@ -552,7 +555,7 @@ https://developer.mozilla.org/en-US/docs/Web/HTTP/Cookies
 
 .
 .
-14. HTML5 Geolocation API
+14. HTML5 - API - Geolocation (GPS)
 
 - The HTML 5 Geolocation API is used to locate a user's position .
   Since this can compromise privacy, the position is not available unless the user approves it.
@@ -575,8 +578,20 @@ Presenting Data in 2/two ways: Geodetic -and- Civic.
 -- getCurrentPosition() method returns an object (latitude, longitude, accuracy properties).
 
 --- example: 
+.
+. :::TODO:::  Create a FULL example of GPS.
+.
+.
+. :::View This URL:::
+. url: geolocation
+. https://www.w3schools.com/html/html5_geolocation.asp
+
+.
+.
+15. HTML5 - API - Drag -and- Drop
+
+- 
 
 
 
-url: geolocation
-https://www.w3schools.com/html/html5_geolocation.asp
+
