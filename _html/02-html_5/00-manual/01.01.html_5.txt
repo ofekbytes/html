@@ -499,12 +499,26 @@ JavaScript cookies property ("document.cookie") can create, read, delete cookies
 
 document.cookie = "hello=true";
 document.cookie = "doSomethingOnlyOnce=true; expires=Fri, 31 Dec 9999 23:59:59 GMT";
-document.cookie = "person=beau; expires=Fri, 31 Dec 9999 23:59:59 GMT; path=/"
+document.cookie = "person=test; expires=Fri, 31 Dec 9999 23:59:59 GMT; path=/"
 
-document.cookie = "person=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
+document.cookie = "person=test; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
 
 console.log(document.cookie)
 
+//
+// TODO //
+
+
+// Examples: 
+https://www.w3schools.com/js/js_cookies.asp
+
+https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/cookies
+
+https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/cookies/getAll/
+
+https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/cookies/set
+
+https://developer.mozilla.org/en-US/docs/Web/HTTP/Cookies
 
 .
 .
