@@ -15,7 +15,7 @@
 12. HTML5 - <progress> tag Element (Progress-Bar) -
 13. HTML5 - API - Web Storage - cookie(), sessionStorage(), localStorage()
 14. HTML5 - API - Geolocation (GPS)
-15. HTML5 - API - Drag -and- Drop
+15. HTML5 - API -- Drag -and- Drop
 
 .
 .
@@ -602,9 +602,17 @@ Presenting Data in 2/two ways: Geodetic -and- Civic.
 
 .
 .
-15. HTML5 - API - Drag -and- Drop
+15. HTML5 - API -- Drag -and- Drop
 
-- 
+- Drag and drop is a very common feature. 
+  "grab" an object and drag it to a different location.
+  Any element can be draggable.
+
+//temp links
+
+https://www.w3schools.com/html/html5_draganddrop.asp
+
+https://developer.mozilla.org/en-US/docs/Web/API/HTML_Drag_and_Drop_API
 
 
 

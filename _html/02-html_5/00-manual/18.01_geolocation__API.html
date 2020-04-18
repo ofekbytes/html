@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html>
 
-<head>
-    <title>18.01_geolocation __API.html</title>
-</head>
+    <head>
+        <title>18.01_geolocation __API.html</title>
+    </head>
+
     <body onload="getLocation()">
 
 
@@ -15,8 +16,8 @@
             var currentLocation = document.getElementById("output");
 
             /*
-            * getLocation() - first function loaded from onload
-            */
+             * getLocation() - first function loaded from onload
+             */
             function getLocation() {
                 //Check if Geolocation is supported
                 if (navigator.geolocation) {
@@ -29,13 +30,12 @@
             }
 
             /*
-            *  
-            */
+             *  
+             */
             function showPosition(position) {
                 currentLocation.innerHTML = "Latitude: " + position.coords.latitude +
                     "<br>Longitude: " + position.coords.longitude;
             }
-
         </script>
 
     </body>
