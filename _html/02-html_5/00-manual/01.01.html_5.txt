@@ -231,7 +231,7 @@ Elements: <article>, <aside>, <nav>, <section>
 --- News story
 --- Comment
 
--!- The <article> tagh element replaces the <div> tag element that was widely used in HTML4, along with an id or class.
+-!- The <article> tag element replaces the <div> tag element that was widely used in HTML4, along with an id or class.
 -!- <article> tag instead of <div> tag
 
 --- example:
@@ -251,7 +251,7 @@ Elements: <article>, <aside>, <nav>, <section>
     <08.01_tag__artical.html>
 
 -!- When an <article> element is nested, 
-   the inner element represents an article related to the outer element. 
+   the inner <article> element represents an article related to the outer <article> element. 
    example:
    blog post comments can be <article> elements nested in the <article> representing the blog post.
 
