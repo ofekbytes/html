@@ -571,27 +571,52 @@ https://developer.mozilla.org/en-US/docs/Web/HTTP/Cookies
 .
 14. HTML5 - API - Geolocation (GPS)
 
-- The HTML 5 Geolocation API is used to locate a user's position .
+- The HTML 5 Geolocation API is used to locate a user's position.
   Since this can compromise privacy, the position is not available unless the user approves it.
 
 
 --- example: get Current Position - getCurrentPosition() :
     navigator.geolocation.getCurrentPosition();
 
-Parameters:
-showLocation (mandatory): Defines the callback method that retrieves location information.
-ErrorHandler(optional): Defines the callback method that is invoked when an error occurs in processing the asynchronous call.
-Options (optional): Defines a set of options for retrieving the location information.
+- Parameters:
+-- showLocation (mandatory) -->  Defines the callback method that retrieves location information.
+-- ErrorHandler(optional) -->  Defines the callback method that is invoked when an error occurs in processing the asynchronous call.
+-- Options (optional) -->  Defines a set of options for retrieving the location information.
 
 
-Presenting Data in 2/two ways: Geodetic -and- Civic.
+- Presenting Data in 2/two ways: Geodetic -and- Civic.
 
 1. geodetic - describe position latitude -and- longitude.
 2. civic - describe location data.
 
 -- getCurrentPosition() method returns an object (latitude, longitude, accuracy properties).
 
---- example: 
+
+--- example: get latitude -and- longitude
+   
+    var currentLocation = document.getElementById("output");
+
+    function getLocation() {
+        //Check if Geolocation is supported
+        if (navigator.geolocation) {
+            // yes supported -> get Current Position (use showPosition() method)
+            navigator.geolocation.getCurrentPosition(showPosition);
+        } else {
+            // not supported -> end program with error message
+            currentLocation.innerHTML = "Geolocation is not supported by this browser.";
+        }
+    }
+
+    function showPosition(position) {
+        currentLocation.innerHTML = "Latitude: " + position.coords.latitude +
+            "<br>Longitude: " + position.coords.longitude;
+    }
+
+
+--- example: get latitude -and- longitude
+    <18.01_geolocation__API.html>
+
+
 .
 . :::TODO:::  Create a FULL example of GPS.
 .

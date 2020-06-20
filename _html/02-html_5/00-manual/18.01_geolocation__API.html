@@ -21,7 +21,7 @@
             function getLocation() {
                 //Check if Geolocation is supported
                 if (navigator.geolocation) {
-                    // yes supported -> get Current Position
+                    // yes supported -> get Current Position (use showPosition() method)
                     navigator.geolocation.getCurrentPosition(showPosition);
                 } else {
                     // not supported -> end program with error message
@@ -30,7 +30,7 @@
             }
 
             /*
-             *  
+             *  showPosition() - method argument.
              */
             function showPosition(position) {
                 currentLocation.innerHTML = "Latitude: " + position.coords.latitude +
