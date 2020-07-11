@@ -16,6 +16,9 @@
 13. HTML5 - API - Web Storage - cookie(), sessionStorage(), localStorage()
 14. HTML5 - API - Geolocation (GPS)
 15. HTML5 - API -- Drag -and- Drop
+16. HTML5 - SVG
+
+
 
 .
 .
@@ -151,7 +154,7 @@ Elements: <article>, <aside>, <nav>, <section>
 </html>
 
 --- example: header element tag
-    <05.01_tag__header.html>
+    <04.01_tag__header.html>
 
 .
 .
@@ -171,7 +174,7 @@ Elements: <article>, <aside>, <nav>, <section>
 - Sitemap and Related Documents
 
 --- example: footer tag
-    <06.01_tag__footer.html>
+    <05.01_tag__footer.html>
 
 .
 .
@@ -206,7 +209,7 @@ Elements: <article>, <aside>, <nav>, <section>
 
 
 --- example: <nav> tag create a section with navigation links. 
-    <07.01_tag__nav.html>
+    <06.01_tag__nav.html>
 
 -!- all of the links in a document should be inside a <nav> element. 
    <nav> element is intended only for major blocks of navigation links. 
@@ -248,7 +251,7 @@ Elements: <article>, <aside>, <nav>, <section>
     </article>
 
 --- example: article tag
-    <08.01_tag__artical.html>
+    <07.01_tag__artical.html>
 
 -!- When an <article> element is nested, 
    the inner <article> element represents an article related to the outer <article> element. 
@@ -279,7 +282,7 @@ Elements: <article>, <aside>, <nav>, <section>
     </article>
 
 --- example: <section> tag inside <article> tag
-    <09.01_tag__section.html>
+    <08.01_tag__section.html>
 
 --- example: artical and section example
     <article>
@@ -341,7 +344,7 @@ Elements: <article>, <aside>, <nav>, <section>
     </artical>
 
 --- example: <aside> tag inside <artical> tag.
-    <10.01_tag__aside.html>
+    <09.01_tag__aside.html>
 
 -!- When an <aside> tag is used outside of an <article> tag, its content should be related to the surrounding content.
 
@@ -387,7 +390,7 @@ Elements: <article>, <aside>, <nav>, <section>
 -- preload - audio loaded when the page loads.
 
 --- example: <audio> tag Element .
-    <11.01_tag__audio.html>
+    <10.01_tag__audio.html>
 
 .
 .
@@ -421,7 +424,7 @@ Elements: <article>, <aside>, <nav>, <section>
 
 
 --- example: <video> tag Element .
-    <12.01_tag__video.html>
+    <11.01_tag__video.html>
 
 .
 .
@@ -440,7 +443,7 @@ Elements: <article>, <aside>, <nav>, <section>
 -- Max: (total/max number value) -  Specifies how much work the task requires in total.
 
 --- example: <video> tag Element .
-    <13.01_tag__progress.html>
+    <12.01_tag__progress.html>
 
 .
 .
@@ -505,20 +508,9 @@ document.cookie = "person=test; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
 
 console.log(document.cookie)
 
-//
-// TODO //
 
-
-// Examples: 
-https://www.w3schools.com/js/js_cookies.asp
-
-https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/cookies
-
-https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/cookies/getAll/
-
-https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/cookies/set
-
-https://developer.mozilla.org/en-US/docs/Web/HTTP/Cookies
+--- example: API - Web Storage - cookie
+    <13.01.01_cookies__Web_Storage_API.html>
 
 .
 .
@@ -538,6 +530,10 @@ https://developer.mozilla.org/en-US/docs/Web/HTTP/Cookies
 
 -- Removing All Values:
    sessionStorage.clear();
+
+
+--- example: API - Web Storage - sessionStorage 
+    <13.02.01_sessionStorage__Web_Storage_API.html>
 
 .
 .
@@ -559,13 +555,9 @@ https://developer.mozilla.org/en-US/docs/Web/HTTP/Cookies
    localStorage.clear();
 
 
-- youtube: (Cookies, sessionStorage, localStorage)
-  https://www.youtube.com/watch?v=AwicscsvGLg&t=2s
-
-
-url: cookies
-https://www.w3schools.com/js/js_cookies.asp
-https://developer.mozilla.org/en-US/docs/Web/HTTP/Cookies
+--- example: <video> tag Element .
+    <13.03.01_localStorage__Web_Storage_API.html>
+    <13.03.02_localStorage__Web_Storage_API.html>
 
 .
 .
@@ -614,16 +606,11 @@ https://developer.mozilla.org/en-US/docs/Web/HTTP/Cookies
 
 
 --- example: get latitude -and- longitude
-    <18.01_geolocation__API.html>
+    <14.01_geolocation__API.html>
 
-
-.
-. :::TODO:::  Create a FULL example of GPS.
-.
-.
-. :::View This URL:::
-. url: geolocation
-. https://www.w3schools.com/html/html5_geolocation.asp
+-!- if we have a map latitude -and- longitude and we want to find out the  street name -or- the city name -or- the state name, 
+    we will need to buy a server service that will give us this information. 
+    example: google map service.
 
 .
 .
@@ -633,12 +620,88 @@ https://developer.mozilla.org/en-US/docs/Web/HTTP/Cookies
   "grab" an object and drag it to a different location.
   Any element can be draggable.
 
-//temp links
 
-https://www.w3schools.com/html/html5_draganddrop.asp
-
-https://developer.mozilla.org/en-US/docs/Web/API/HTML_Drag_and_Drop_API
+--- example: set <img> tag to be draggable.
+    <img draggable="true" />
 
 
+--- example: drag amd drp[]
+
+    <!DOCTYPE HTML>
+    <html>
+
+    <head>
+    <script>
+        function allowDrop(ev) {
+        ev.preventDefault();
+        }
+
+        function drag(ev) {
+        /// step 2: id="image" ///
+        ev.dataTransfer.setData("text", ev.target.id);
+        }
+
+        function drop(ev) {
+        /// step 5: prevents the browser default ///
+        ev.preventDefault();
+
+        /// step 6 + 7: ragged data can be accessed  + The dragged data is the "ID" ///
+        var data = ev.dataTransfer.getData("text");
+
+        /// step 8: appended into the drop element ///
+          ev.target.appendChild(document.getElementById(data));
+        }
+    </script>
+    </head>
+    <body>
+        <!-- step 3 + 4: dragged data can be dropped + drop event occurs -->
+        <div id="box" ondrop="drop(event)" ondragover="allowDrop(event)" style="border:1px solid black; 
+        width:200px; height:200px"></div>
+
+        <!-- step 1: "drag(event)" -->
+        <img id="image" src="https://ofekbytes.github.io/assets/images/picture/star.jpg" draggable="true"
+            ondragstart="drag(event)" width="150" height="50" alt="" />
+    </body>
+    </html>
 
 
+- step 1: 
+  When the element is dragged, "ondragstart" attribute calls the function "drag(event)" 
+  which specifies what data is to be dragged.
+
+- step 2:
+  set data type ("text"), and the value of the dragged data "image" (id="image").
+
+- step 3:
+  The "ondragover" event specifies where the dragged data can be dropped
+  To allow a drop by calling the "event.preventDefault()" method for the ondragover event.
+
+- step 4:
+  When the dragged data is dropped, a drop event occurs. 
+  the "ondrop" attribute calls a function, drop(event)
+
+- step 5:
+  "preventDefault" method prevents the browser default handling of the data (default is open as link on drop).
+
+- step 6:
+  The dragged data can be accessed with the "dataTransfer.getData()" method. 
+
+- step 7:
+  This method will return any data that was set to the same type in the setData() method (step 2).
+  The dragged data is the "ID" of the dragged element ("image").
+
+- step 8:
+  the dragged element is appended into the drop element, using the "appendChild()" function.
+
+
+--- example: get latitude -and- longitude
+    <15.01_DragAndDrop__API.html>
+    <15.02_DragAndDrop__API.html>
+    <15.03_DragAndDrop__API.html>
+    <15.04_DragAndDrop__API.html>
+
+.
+.
+16. HTML5 - SVG
+
+- 
