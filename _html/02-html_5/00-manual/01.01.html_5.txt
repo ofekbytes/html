@@ -702,6 +702,13 @@ console.log(document.cookie)
 
 .
 .
-16. HTML5 - SVG
+16. HTML5 - SVG 
 
-- 
+- SVG (Scalable Vector Graphics) - 
+  SVG is used to draw shapes with HTML-style markup.
+  SVG can draw paths, boxes, circles, text, graphic images.
+
+-!- SVG defines vector-based graphics in XML format.
+
+
+-- SVG image adding with <img> tag.
