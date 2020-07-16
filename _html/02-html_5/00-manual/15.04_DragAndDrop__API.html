@@ -2,37 +2,40 @@
 <html>
 
 <head>
-<script>
+  <title>Drag and Drop</title>
+  <script>
     function allowDrop(ev) {
-    ev.preventDefault();
+      ev.preventDefault();
     }
 
     function drag(ev) {
-    /// step 2: id="image" ///
-    ev.dataTransfer.setData("text", ev.target.id);
+      /// step 2: id="image" ///
+      ev.dataTransfer.setData("text", ev.target.id);
     }
 
     function drop(ev) {
-    /// step 5: prevents the browser default ///
-    ev.preventDefault();
+      /// step 5: prevents the browser default ///
+      ev.preventDefault();
 
-    /// step 6 + 7: ragged data can be accessed  + The dragged data is the "ID" ///
-    var data = ev.dataTransfer.getData("text");
+      /// step 6 + 7: ragged data can be accessed  + The dragged data is the "ID" ///
+      var data = ev.dataTransfer.getData("text");
 
-    /// step 8: appended into the drop element ///
+      /// step 8: appended into the drop element ///
       ev.target.appendChild(document.getElementById(data));
     }
-</script>
+  </script>
 </head>
+
 <body>
-    <!-- step 3 + 4: dragged data can be dropped + drop event occurs -->
-    <div id="box" ondrop="drop(event)" ondragover="allowDrop(event)" style="border:1px solid black; 
+  <!-- step 3 + 4: dragged data can be dropped + drop event occurs -->
+  <div id="box" ondrop="drop(event)" ondragover="allowDrop(event)" style="border:1px solid black; 
     width:200px; height:200px"></div>
 
-    <!-- step 1: "drag(event)" -->
-    <img id="image" src="https://ofekbytes.github.io/assets/images/picture/star.jpg" draggable="true"
-        ondragstart="drag(event)" width="150" height="50" alt="" />
+  <!-- step 1: "drag(event)" -->
+  <img id="image" src="https://ofekbytes.github.io/assets/images/picture/star.jpg" draggable="true"
+    ondragstart="drag(event)" width="150" height="50" alt="" />
 </body>
+
 </html>
 
 
@@ -63,5 +66,3 @@
 
 <!-- - step 8: -->
 <!-- the dragged element is appended into the drop element, using the "appendChild()" function. -->
-
-

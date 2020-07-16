@@ -1,15 +1,15 @@
 
 ## HTML 5 ##
 
-1. HTML 5
-2. HTML5 - New Elements in HTML5
-3. HTML5 - The List of Content Models
-4. HTML5 - header tag
-5. HTML5 - footer tag
-6. HTML5 - nav tag
-7. HTML5 - <article> tag  (is the <div> tag of html4)
-8. HTML5 - <section> tag Element
-9. HTML5 - <aside> tag Element
+01. HTML 5
+02. HTML5 - New Elements in HTML5
+03. HTML5 - The List of Content Models
+04. HTML5 - header tag
+05. HTML5 - footer tag
+06. HTML5 - nav tag
+07. HTML5 - <article> tag  (is the <div> tag of html4)
+08. HTML5 - <section> tag Element
+09. HTML5 - <aside> tag Element
 10. HTML5 - <audio> tag Element
 11. HTML5 - <video> tag Element
 12. HTML5 - <progress> tag Element (Progress-Bar) -
@@ -22,7 +22,7 @@
 
 .
 .
-1. HTML 5 - 
+01. HTML 5 - 
 
 - HTML 5 - first line declaration
 <!DOCTYPE HTML> 
@@ -34,7 +34,7 @@
 
 .
 .
-2. HTML5 - New Elements in HTML5 - 
+02. HTML5 - New Elements in HTML5 - 
 
 <article>, <aside>, <audio>, <canvas>, <datalist>, <details>, <embed>, <footer>, <header>, <nav>, <output>, <progress>, <section>, <video>  
 
@@ -55,7 +55,7 @@
 
 .
 .
-3. HTML5 - The List of Content Models - 
+03. HTML5 - The List of Content Models - 
 
 - HTML elements typically belonged in either the "block level" -or- "inline content" model. 
 
@@ -116,7 +116,7 @@ Elements: <article>, <aside>, <nav>, <section>
 
 .
 .
-4. HTML5 - header tag -
+04. HTML5 - header tag -
 
 -- The <header> element represents a container for introductory content or a set of navigational links.
 -- A <header> element typically contains:
@@ -158,7 +158,7 @@ Elements: <article>, <aside>, <nav>, <section>
 
 .
 .
-5. HTML5 - footer tag - 
+05. HTML5 - footer tag - 
 
 - <footer> Element
 
@@ -178,7 +178,7 @@ Elements: <article>, <aside>, <nav>, <section>
 
 .
 .
-6. HTML5 - nav tag - 
+06. HTML5 - nav tag - 
 
 -  <nav> Element
 
@@ -217,7 +217,7 @@ Elements: <article>, <aside>, <nav>, <section>
 
 .
 .
-7. HTML5 - <article> tag  (is the <div> tag of html4) - 
+07. HTML5 - <article> tag  (is the <div> tag of html4) - 
 
 -  <Article> tag is a self-contained, 
    independent piece of content that can be used and distributed separately from the rest of the page or site. 
@@ -260,7 +260,7 @@ Elements: <article>, <aside>, <nav>, <section>
 
 .
 .
-8. HTML5 - <section> tag Element - 
+08. HTML5 - <section> tag Element - 
 
 - <section> is a logical container of the page or <article>. 
 -- Sections can be used to divide up content within an article.
@@ -319,7 +319,7 @@ Elements: <article>, <aside>, <nav>, <section>
 
 .
 .
-9. HTML5 - <aside> tag Element - 
+09. HTML5 - <aside> tag Element - 
 
 -  <aside> tag is secondary or relating to content (tangential content) 
    which could be considered separate from but indirectly related to the main content.
@@ -705,10 +705,49 @@ console.log(document.cookie)
 16. HTML5 - SVG 
 
 - SVG (Scalable Vector Graphics) - 
-  SVG is used to draw shapes with HTML-style markup.
-  SVG can draw paths, boxes, circles, text, graphic images.
+-- html5 allows direct embedding of SVG tags in an HTML document.
+-- SVG is used to draw shapes with HTML-style markup.
+-- SVG can draw paths, boxes, circles, text, graphic images.
+-- SVG is a 2D vector image format based on an XML syntax.
+-- Based on an XML syntax, SVG can be styled with CSS and made interactive using JavaScript. 
 
--!- SVG defines vector-based graphics in XML format.
+-- As a "vector image format", SVG graphics can scale infinitely (responsive design), 
+   SVG provides a set of tools: clipping, masking, filters, animations.
 
 
--- SVG image adding with <img> tag.
+-- SVG image adding with <img> tag:
+
+   <img src="https://ofekbytes.github.io/assets/icons/svg/125x125-pixels/40.svg" alt="" height="600" />
+
+
+.
+.
+- drawing - drawing will be done inside <svg> tag.
+
+--- example: <svg> tag with height and width.
+    <16.01.02_tag__svg.html>
+
+
+.
+.
+- drawing circle - drawing circle with <circle> tag inside <svg> tag.
+
+- <circle> tag parameters:
+-- "cx" - pushes the center of the circle further to the right of the screen
+-- "cy" - pushes the center of the circle further down from the top of the screen
+-- "r" - defines the radius
+-- "fill" - determines the color of our circle
+-- "stroke" - adds an outline to the circle
+-- "stroke-width" - stroke width
+
+--- example:
+    <circle cx=100 cy=100 r=90 fill="red" stroke="green" />
+
+
+--- example: svg tag
+    <16.01.03_tag__svg.html>
+
+
+.
+.
+- circle - 

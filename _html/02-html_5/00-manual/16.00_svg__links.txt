@@ -1,0 +1,37 @@
+
+
+---[links]----
+
+
+/// Vector_graphics ///
+https://en.wikipedia.org/wiki/Vector_graphics
+
+/// svg ///
+https://en.wikipedia.org/wiki/Scalable_Vector_Graphics
+
+/// svg ///
+https://developer.mozilla.org/en-US/docs/Glossary/SVG
+
+/// svg ///
+https://developer.mozilla.org/en-US/docs/Web/SVG
+
+/// Element ///
+https://developer.mozilla.org/en-US/docs/Web/SVG/Element
+
+/// Attribute ///
+https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute
+
+/// Document_Object_Model#SVG_interfaces ///
+https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model#SVG_interfaces
+
+/// Applying_SVG_effects_to_HTML_content ///
+https://developer.mozilla.org/en-US/docs/Web/SVG/Applying_SVG_effects_to_HTML_content
+
+
+
+/// html canvas ///
+https://www.w3schools.com/tags/ref_canvas.asp
+
+
+
+

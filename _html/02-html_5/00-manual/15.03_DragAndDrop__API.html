@@ -2,6 +2,7 @@
 <html>
 
 <head>
+  <title>Drag and Drop</title>
   <script>
     function allowDrop(ev) {
       ev.preventDefault();
@@ -40,8 +41,8 @@
    width:200px; height:200px"></div>
 
 
-<!-- step 1) When the element is dragged, "ondragstart" attribute calls the function "drag(event)" -->
-<!-- which specifies what data is to be dragged. -->
+  <!-- step 1) When the element is dragged, "ondragstart" attribute calls the function "drag(event)" -->
+  <!-- which specifies what data is to be dragged. -->
   <img id="image" src="https://ofekbytes.github.io/assets/images/picture/star.jpg" draggable="true"
     ondragstart="drag(event)" width="150" height="50" alt="" />
 
