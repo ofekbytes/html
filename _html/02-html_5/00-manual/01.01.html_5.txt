@@ -17,8 +17,8 @@
 14. HTML5 - API - Geolocation (GPS)
 15. HTML5 - API -- Drag -and- Drop
 16. HTML5 - SVG
-
-
+16.02. HTML5 - <svg> tag 
+16.03. HTML5 - <circle> tag
 
 .
 .
@@ -719,24 +719,39 @@ console.log(document.cookie)
 
    <img src="https://ofekbytes.github.io/assets/icons/svg/125x125-pixels/40.svg" alt="" height="600" />
 
+--- example: loading "svg" format file with html <img> tag.
+    <16.01.01_tag__img.html>
 
 .
 .
-- drawing - drawing will be done inside <svg> tag.
+16.02. HTML5 - <svg> tag 
+
+- drawing - drawing will be done inside html <svg> tag .
+
+- <svg> tag is like
+
+- <svg> tag with two attributes: 
+-- width 
+-- height
+
+--- svg width, height
+<svg width="2000" height="1000">
+ 
 
 --- example: <svg> tag with height and width.
-    <16.01.02_tag__svg.html>
-
+    <16.02.01_tag__svg.html>
 
 .
 .
+16.03. HTML5 - <circle> tag
+
 - drawing circle - drawing circle with <circle> tag inside <svg> tag.
 
 - <circle> tag parameters:
 -- "cx" - pushes the center of the circle further to the right of the screen
 -- "cy" - pushes the center of the circle further down from the top of the screen
 -- "r" - defines the radius
--- "fill" - determines the color of our circle
+-- "fill" - determines the color of our circle (default "black")
 -- "stroke" - adds an outline to the circle
 -- "stroke-width" - stroke width
 
@@ -744,10 +759,27 @@ console.log(document.cookie)
     <circle cx=100 cy=100 r=90 fill="red" stroke="green" />
 
 
---- example: svg tag
-    <16.01.03_tag__svg.html>
-
+--- example: svg tag - clrcle
+    <16.03.01_tag__svg_circle.html>
 
 .
 .
-- circle - 
+16.04. HTML5 - <rect> tag - (rect/rectangle)
+
+- drawing rectangle - drawing rectangle with <rect> tag inside <svg> tag.
+
+- <rect> tag parameters:
+-- "x" - pushes the center of the rectangle further to the right of the screen
+-- "y" - pushes the center of the rectangle further down from the top of the screen
+-- "fill" - determines the color of our rectangle (default "black")
+-- "stroke" - adds an outline to the rectangle
+-- "stroke-width" - stroke width
+-- "rx" - Rounded corner rectangle
+
+
+--- continue heade
+
+https://www.sololearn.com/Play/HTML
+https://www.w3schools.com/html/html5_svg.asp
+https://developer.mozilla.org/en-US/docs/Web/SVG/Element/rect
+
