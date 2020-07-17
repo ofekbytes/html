@@ -748,12 +748,34 @@ console.log(document.cookie)
 - drawing circle - drawing circle with <circle> tag inside <svg> tag.
 
 - <circle> tag parameters:
+
 -- "cx" - pushes the center of the circle further to the right of the screen
+          (The x-axis coordinate of the center of the circle).
+          Value type: <length>|<percentage> 
+          Default value: 0
+          Animatable: yes
+
 -- "cy" - pushes the center of the circle further down from the top of the screen
--- "r" - defines the radius
+          (The y-axis coordinate of the center of the circle).
+          Value type: <length>|<percentage> 
+          Default value: 0
+          Animatable: yes
+
+-- "r" - defines the radius of the circle. 
+         (A value lower or equal to zero disables rendering of the circle).
+         Value type: <length> 
+         Default value: 0
+         Animatable: yes
+
 -- "fill" - determines the color of our circle (default "black")
 -- "stroke" - adds an outline to the circle
 -- "stroke-width" - stroke width
+
+-- pathLength - The total length for the circle's circumference, in user units.
+                Value type: <number> 
+                Default value: none
+                Animatable: yes
+
 
 --- example:
     <circle cx=100 cy=100 r=90 fill="red" stroke="green" />
@@ -769,12 +791,41 @@ console.log(document.cookie)
 - drawing rectangle - drawing rectangle with <rect> tag inside <svg> tag.
 
 - <rect> tag parameters:
--- "x" - pushes the center of the rectangle further to the right of the screen
--- "y" - pushes the center of the rectangle further down from the top of the screen
+-- "x" - The x coordinate of the rectangle on the screen. (horizontal)
+         Value type: <length>|<percentage> 
+         Default value: 0
+         Animatable: yes
+
+-- "y" - The y coordinate of the rectangle on the screen. (vertical)
+         Value type: <length>|<percentage> 
+         Default value: 0
+         Animatable: yes
+
+-- width -  The width of the rectangle. 
+            Value type: auto|<length>|<percentage> 
+            Default value: auto
+            Animatable: yes
+
+-- height - The height of the rectangle. 
+            Value type: auto|<length>|<percentage> 
+            Default value: auto
+            Animatable: yes
+
 -- "fill" - determines the color of our rectangle (default "black")
 -- "stroke" - adds an outline to the rectangle
 -- "stroke-width" - stroke width
--- "rx" - Rounded corner rectangle
+
+-- rx - The horizontal corner radius of the rectangle. 
+        Defaults to ry if it is specified.
+        Value type: auto|<length>|<percentage> 
+        Default value: auto
+        Animatable: yes
+
+-- ry - The vertical corner radius of the rectangle. 
+        Defaults to rx if it is specified.
+        Value type: auto|<length>|<percentage> 
+        Default value: auto
+        Animatable: yes
 
 
 --- continue heade
@@ -782,4 +833,8 @@ console.log(document.cookie)
 https://www.sololearn.com/Play/HTML
 https://www.w3schools.com/html/html5_svg.asp
 https://developer.mozilla.org/en-US/docs/Web/SVG/Element/rect
+
+<!-- circle -->
+https://developer.mozilla.org/en-US/docs/Web/SVG/Element/circle
+
 
