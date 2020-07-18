@@ -19,6 +19,10 @@
 16. HTML5 - SVG
 16.02. HTML5 - <svg> tag 
 16.03. HTML5 - <circle> tag
+16.04. HTML5 - <rect> tag - (rect/rectangle)
+16.05. HTML5 - <line> tag 
+
+
 
 .
 .
@@ -747,6 +751,7 @@ console.log(document.cookie)
 
 - drawing circle - drawing circle with <circle> tag inside <svg> tag.
 
+
 - <circle> tag parameters:
 
 -- "cx" - pushes the center of the circle further to the right of the screen
@@ -777,12 +782,15 @@ console.log(document.cookie)
                 Animatable: yes
 
 
---- example:
+--- example: cricle
     <circle cx=100 cy=100 r=90 fill="red" stroke="green" />
+    <circle cx=500 cy=100 r=90 fill="green" stroke="red" stroke-width="4" />
+    <circle cx=700 cy=100 r=90 fill=rgb(10,10,10) stroke=rgb(100,100,100) stroke-width="10" />
 
 
 --- example: svg tag - clrcle
     <16.03.01_tag__svg_circle.html>
+    <16.03.02_tag__svg_circle.html>
 
 .
 .
@@ -790,7 +798,9 @@ console.log(document.cookie)
 
 - drawing rectangle - drawing rectangle with <rect> tag inside <svg> tag.
 
+
 - <rect> tag parameters:
+
 -- "x" - The x coordinate of the rectangle on the screen. (horizontal)
          Value type: <length>|<percentage> 
          Default value: 0
@@ -832,12 +842,24 @@ console.log(document.cookie)
                 Default value: none
                 Animatable: yes
 
+
+--- example: rectangle
+    <rect width="75" height="25" x="300" y="1" fill="lightblue" stroke="blue" stroke-width="5" />
+    <rect width="75" height="25" x="400" y="1" fill=rgb(10,10,10) stroke=rgb(100,100,100) stroke-width="6" />
+
+
+--- example: rectangle
+    <16.04.01_tag__svg_rect.html>
+    <16.04.02_tag__svg_rect.html>
+
 .
 .
 16.05. HTML5 - <line> tag 
 
 - The <line> tag used to create a line connecting two points.
 
+
+- <line> tag parameters:
 
 -- x1 - "x-axis" coordinate of the line starting point.
         Value type: <length>|<percentage>|<number> 
@@ -864,9 +886,57 @@ console.log(document.cookie)
                 Default value: none
                 Animatable: yes
 
--!-
+-!- no color = no line - 
+    If you do not specify the stroke color the line will not be visible.
+
 
 --- example: line
+    <line x1="0" y1="0" x2="15" y2="150" stroke="red" stroke-width="2" />
+    <line x1="0" y1="0" x2="20" y2="200" stroke=rgb(100,200,100) stroke-width="3" />
+
+
+--- example: line
+    <16.05.01_tag__svg_line.html>
+    <16.05.02_tag__svg_line.html>
+
+.
+.
+16.05. HTML5 - <polyline> tag 
+
+- the <polyline> tag defines shapes built from multiple line definitions:
+
+
+- <polyline> tag parameters:
+
+
+--- example: parameters
+    <polyline points="x,y x,y" fill="none/color" stroke="color" />
+
+
+--- example: polyline
+    <svg width="2000" height="500">
+        <polyline style="
+            stroke-linejoin:miter; 
+            stroke:black; 
+            stroke-width:12; 
+            fill: 
+            none;"            
+            points="100 100, 150 150, 200 100" />
+    </svg>
+
+
+
+
+
+
+
+
+----[todo]-----
+
+/// TODO #0:
+/// make "example: parameters" (template) for all shape.
+/// example: 
+    <polyline points="x,y x,y" fill="none/color" stroke="color" />
 
 
 /// TODO #1:
@@ -884,3 +954,5 @@ console.log(document.cookie)
         </svg>
 
 /// TODO #3:
+
+-----------------------------------------------------------------------------

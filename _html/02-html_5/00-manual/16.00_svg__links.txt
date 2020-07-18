@@ -14,6 +14,28 @@ https://developer.mozilla.org/en-US/docs/Web/SVG/Element/rect
 <!-- line -->
 https://developer.mozilla.org/en-US/docs/Web/SVG/Element/line
 
+<!-- polyline -->
+https://developer.mozilla.org/en-US/docs/Web/SVG/Element/polyline
+
+
+
+
+<!-- polygon --> **
+https://developer.mozilla.org/en-US/docs/Web/SVG/Element/polygon
+
+
+<!-- path --> **
+https://developer.mozilla.org/en-US/docs/Web/SVG/Element/path
+
+<!-- image --> **
+https://developer.mozilla.org/en-US/docs/Web/SVG/Element/image
+
+<!-- ellipse --> **
+https://developer.mozilla.org/en-US/docs/Web/SVG/Element/ellipse
+
+<!-- use --> **
+https://developer.mozilla.org/en-US/docs/Web/SVG/Element/use
+
 
 
 /// Vector_graphics ///
@@ -40,8 +62,6 @@ https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model#SVG_inter
 
 /// Applying_SVG_effects_to_HTML_content ///
 https://developer.mozilla.org/en-US/docs/Web/SVG/Applying_SVG_effects_to_HTML_content
-
-
 
 /// html canvas ///
 https://www.w3schools.com/tags/ref_canvas.asp
