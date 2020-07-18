@@ -827,14 +827,60 @@ console.log(document.cookie)
         Default value: auto
         Animatable: yes
 
+-- pathLength - The total length of the rectangle's perimeter, in user units.
+                Value type: <number> 
+                Default value: none
+                Animatable: yes
 
---- continue heade
+.
+.
+16.05. HTML5 - <line> tag 
 
-https://www.sololearn.com/Play/HTML
-https://www.w3schools.com/html/html5_svg.asp
-https://developer.mozilla.org/en-US/docs/Web/SVG/Element/rect
-
-<!-- circle -->
-https://developer.mozilla.org/en-US/docs/Web/SVG/Element/circle
+- The <line> tag used to create a line connecting two points.
 
 
+-- x1 - "x-axis" coordinate of the line starting point.
+        Value type: <length>|<percentage>|<number> 
+        Default value: 0
+        Animatable: yes
+
+-- x2 - "x-axis" coordinate of the line ending point.
+        Value type: <length>|<percentage>|<number> 
+        Default value: 0
+        Animatable: yes
+
+-- y1 - "y-axis" coordinate of the line starting point.
+        Value type: <length>|<percentage>|<number> 
+        Default value: 0
+        Animatable: yes
+
+-- y2 - "y-axis" coordinate of the line ending point.
+        Value type: <length>|<percentage>|<number>
+        Default value: 0
+        Animatable: yes
+
+-- pathLength - Defines the total path length in user units.
+                Value type: <number> 
+                Default value: none
+                Animatable: yes
+
+-!-
+
+--- example: line
+
+
+/// TODO #1:
+/// at the end of 16. create animation to all of the shape - each in his own location.
+
+
+/// TODO #2:
+/// check if the code example: "xmlns="http://www.w3.org/2000/svg" - has any meaning ??
+/// example:
+        <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+          <line x1="0" y1="80" x2="100" y2="20" stroke="red" />
+
+        <!-- If you do not specify the stroke
+            color the line will not be visible -->
+        </svg>
+
+/// TODO #3:

@@ -2,6 +2,19 @@
 
 ---[links]----
 
+<!-- circle, rectangle,  -->
+https://www.w3schools.com/html/html5_svg.asp
+
+<!-- circle -->
+https://developer.mozilla.org/en-US/docs/Web/SVG/Element/circle
+
+<!-- rectangle -->
+https://developer.mozilla.org/en-US/docs/Web/SVG/Element/rect
+
+<!-- line -->
+https://developer.mozilla.org/en-US/docs/Web/SVG/Element/line
+
+
 
 /// Vector_graphics ///
 https://en.wikipedia.org/wiki/Vector_graphics
@@ -20,6 +33,7 @@ https://developer.mozilla.org/en-US/docs/Web/SVG/Element
 
 /// Attribute ///
 https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute
+https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/Core
 
 /// Document_Object_Model#SVG_interfaces ///
 https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model#SVG_interfaces
@@ -31,7 +45,5 @@ https://developer.mozilla.org/en-US/docs/Web/SVG/Applying_SVG_effects_to_HTML_co
 
 /// html canvas ///
 https://www.w3schools.com/tags/ref_canvas.asp
-
-
 
 
