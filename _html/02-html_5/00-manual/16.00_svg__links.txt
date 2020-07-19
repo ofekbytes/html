@@ -17,6 +17,9 @@ https://developer.mozilla.org/en-US/docs/Web/SVG/Element/line
 <!-- polyline -->
 https://developer.mozilla.org/en-US/docs/Web/SVG/Element/polyline
 
+<!-- ellipse --> **
+https://developer.mozilla.org/en-US/docs/Web/SVG/Element/ellipse
+
 
 
 
@@ -30,8 +33,6 @@ https://developer.mozilla.org/en-US/docs/Web/SVG/Element/path
 <!-- image --> **
 https://developer.mozilla.org/en-US/docs/Web/SVG/Element/image
 
-<!-- ellipse --> **
-https://developer.mozilla.org/en-US/docs/Web/SVG/Element/ellipse
 
 <!-- use --> **
 https://developer.mozilla.org/en-US/docs/Web/SVG/Element/use

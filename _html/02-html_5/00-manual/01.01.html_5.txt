@@ -21,7 +21,7 @@
 16.03. HTML5 - <circle> tag
 16.04. HTML5 - <rect> tag - (rect/rectangle)
 16.05. HTML5 - <line> tag 
-
+16.06. HTML5 - <polyline> tag 
 
 
 .
@@ -776,13 +776,18 @@ console.log(document.cookie)
 -- "stroke" - adds an outline to the circle
 -- "stroke-width" - stroke width
 
--- pathLength - The total length for the circle's circumference, in user units.
-                Value type: <number> 
-                Default value: none
-                Animatable: yes
+-- "pathLength" - The total length for the circle's circumference, in user units.
+                  Value type: <number> 
+                  Default value: none
+                  Animatable: yes
+
+
+--- example: circle parameters:
+    <circle cx, cy, radius, fill="none/color, stroke=color, stroke-width=width />
 
 
 --- example: cricle
+    <circle cx=100 cy=100 r=90 fill="none" stroke="green" />
     <circle cx=100 cy=100 r=90 fill="red" stroke="green" />
     <circle cx=500 cy=100 r=90 fill="green" stroke="red" stroke-width="4" />
     <circle cx=700 cy=100 r=90 fill=rgb(10,10,10) stroke=rgb(100,100,100) stroke-width="10" />
@@ -811,36 +816,40 @@ console.log(document.cookie)
          Default value: 0
          Animatable: yes
 
--- width -  The width of the rectangle. 
-            Value type: auto|<length>|<percentage> 
-            Default value: auto
-            Animatable: yes
+-- "width" -  The width of the rectangle. 
+              Value type: auto|<length>|<percentage> 
+              Default value: auto
+                Animatable: yes
 
--- height - The height of the rectangle. 
-            Value type: auto|<length>|<percentage> 
-            Default value: auto
-            Animatable: yes
+-- "height" - The height of the rectangle. 
+              Value type: auto|<length>|<percentage> 
+              Default value: auto
+              Animatable: yes
 
 -- "fill" - determines the color of our rectangle (default "black")
 -- "stroke" - adds an outline to the rectangle
 -- "stroke-width" - stroke width
 
--- rx - The horizontal corner radius of the rectangle. 
-        Defaults to ry if it is specified.
-        Value type: auto|<length>|<percentage> 
-        Default value: auto
-        Animatable: yes
+-- "rx" - The horizontal corner radius of the rectangle. 
+          Defaults to ry if it is specified.
+          Value type: auto|<length>|<percentage> 
+          Default value: auto
+          Animatable: yes
 
--- ry - The vertical corner radius of the rectangle. 
-        Defaults to rx if it is specified.
-        Value type: auto|<length>|<percentage> 
-        Default value: auto
-        Animatable: yes
+-- "ry" - The vertical corner radius of the rectangle. 
+          Defaults to rx if it is specified.
+          Value type: auto|<length>|<percentage> 
+          Default value: auto
+          Animatable: yes
 
--- pathLength - The total length of the rectangle's perimeter, in user units.
-                Value type: <number> 
-                Default value: none
-                Animatable: yes
+-- "pathLength" - The total length of the rectangle's perimeter, in user units.
+                  Value type: <number> 
+                  Default value: none
+                  Animatable: yes
+
+
+--- example: rect parameters:
+    <rect x, y, width, height, fill="none/color, stroke=color, stroke-width=width, rx, ry />
 
 
 --- example: rectangle
@@ -861,33 +870,37 @@ console.log(document.cookie)
 
 - <line> tag parameters:
 
--- x1 - "x-axis" coordinate of the line starting point.
-        Value type: <length>|<percentage>|<number> 
-        Default value: 0
-        Animatable: yes
+-- "x1" - "x-axis" coordinate of the line starting point.
+          Value type: <length>|<percentage>|<number> 
+          Default value: 0
+          Animatable: yes
 
--- x2 - "x-axis" coordinate of the line ending point.
-        Value type: <length>|<percentage>|<number> 
-        Default value: 0
-        Animatable: yes
+-- "x2" - "x-axis" coordinate of the line ending point.
+          Value type: <length>|<percentage>|<number> 
+          Default value: 0
+          Animatable: yes
 
--- y1 - "y-axis" coordinate of the line starting point.
-        Value type: <length>|<percentage>|<number> 
-        Default value: 0
-        Animatable: yes
+-- "y1" - "y-axis" coordinate of the line starting point.
+          Value type: <length>|<percentage>|<number> 
+          Default value: 0
+          Animatable: yes
 
--- y2 - "y-axis" coordinate of the line ending point.
-        Value type: <length>|<percentage>|<number>
-        Default value: 0
-        Animatable: yes
+-- "y2" - "y-axis" coordinate of the line ending point.
+          Value type: <length>|<percentage>|<number>
+          Default value: 0
+          Animatable: yes
 
--- pathLength - Defines the total path length in user units.
-                Value type: <number> 
-                Default value: none
-                Animatable: yes
+-- "pathLength" - Defines the total path length in user units.
+                  Value type: <number> 
+                  Default value: none
+                  Animatable: yes
 
 -!- no color = no line - 
     If you do not specify the stroke color the line will not be visible.
+
+
+--- example: line parameters:
+    <line x-start=number, y-start=number, x-end=number, y-end=number, stroke=color, stroke-width=width />
 
 
 --- example: line
@@ -901,16 +914,21 @@ console.log(document.cookie)
 
 .
 .
-16.05. HTML5 - <polyline> tag 
+16.06. HTML5 - <polyline> tag 
 
 - the <polyline> tag defines shapes built from multiple line definitions:
 
 
 - <polyline> tag parameters:
 
+-- "points" - This attribute defines the list of points (pairs of x,y absolute coordinates) required to draw the polyline
+            Value type: <number>+ 
+            Default value: ""
+            Animatable: yes
 
---- example: parameters
-    <polyline points="x,y x,y" fill="none/color" stroke="color" />
+
+--- example: polyline parameters:
+    <polyline points="x,y, x,y, ..., x,y" fill="none/color", stroke="color" />
 
 
 --- example: polyline
@@ -919,16 +937,65 @@ console.log(document.cookie)
             stroke-linejoin:miter; 
             stroke:black; 
             stroke-width:12; 
-            fill: 
-            none;"            
+            fill:none;"            
             points="100 100, 150 150, 200 100" />
     </svg>
 
+--- example: polyline
+    <16.06.01_tag__svg_polyline.html>
+    <16.06.02_tag__svg_polyline.html>
+
+.
+.
+16.07. HTML5 - <ellipse> tag 
+
+- The <ellipse> tag, create ellipses based on a center coordinate, and both their x and y radius.
+  (horizontal, vertical, rx, ry, attributes).
 
 
+- <ellipse> tag parameters:
+
+-- "cx" - The x position of the ellipse.
+          Value type: <length>|<percentage> 
+          Default value: 0
+          Animatable: yes
+
+-- "cy" - The y position of the ellipse.
+          Value type: <length>|<percentage>
+          Default value: 0
+          Animatable: yes
+
+-- "rx" - The radius of the ellipse on the x axis.
+          Value type: auto|<length>|<percentage>
+          Default value: auto
+          Animatable: yes
+
+-- "ry" - The radius of the ellipse on the y axis.
+          Value type: auto|<length>|<percentage>
+          Default value: auto
+          Animatable: yes
+
+-- "fill" - determines the color of our rectangle (default "black")
+-- "stroke" - adds an outline to the rectangle
+-- "stroke-width" - stroke width
+
+-- "pathLength" - This attribute lets specify the total length for the path, in user units.
+                Value type: <number>
+                Default value: none
+                Animatable: yes
 
 
+--- example: ellipse parameters:
+    <ellipse cx="x" cy="y" rx="radius-x" ry="radius-y" fill="none/color, stroke=color, stroke-width=width />
 
+
+--- example: ellipse
+    <ellipse cx="100" cy="50" rx="100" ry="50" />
+
+
+--- example: ellipse
+    <16.07.01_tag__svg_ellipse.html>
+    <16.07.02_tag__svg_ellipse.html>
 
 
 ----[todo]-----
@@ -956,3 +1023,5 @@ console.log(document.cookie)
 /// TODO #3:
 
 -----------------------------------------------------------------------------
+
+
