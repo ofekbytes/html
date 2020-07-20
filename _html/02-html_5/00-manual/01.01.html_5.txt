@@ -928,6 +928,9 @@ console.log(document.cookie)
             Default value: ""
             Animatable: yes
 
+-- "fill" - determines the color of our polyline (default "black")
+-- "stroke" - adds an outline to the polyline
+-- "stroke-width" - stroke width
 
 --- example: polyline parameters:
     <polyline points="x,y, x,y, ..., x,y" fill="none/color", stroke="color" />
@@ -977,8 +980,8 @@ console.log(document.cookie)
           Default value: auto
           Animatable: yes
 
--- "fill" - determines the color of our rectangle (default "black")
--- "stroke" - adds an outline to the rectangle
+-- "fill" - determines the color of our ellipse (default "black")
+-- "stroke" - adds an outline to the ellipse
 -- "stroke-width" - stroke width
 
 -- "pathLength" - This attribute lets specify the total length for the path, in user units.
@@ -1023,6 +1026,10 @@ console.log(document.cookie)
    Default value: none
    Animatable: yes
 
+-- "fill" - determines the color of our polygon (default "black")
+-- "stroke" - adds an outline to the polygon
+-- "stroke-width" - stroke width
+
 
 --- example: polygon parameters: (x y replaced by numbers)
     <polygon points="x y, x y, x y" fill=none/color stroke=color stroke-width=width />
@@ -1040,6 +1047,10 @@ console.log(document.cookie)
 
 
 ----[todo]-----
+
+-!- check all "
+--- example: xxsubjectxx parameters:" 
+if there in the right subject
 
 /// TODO #0:
 /// make "example: parameters" (template) for all shape.
