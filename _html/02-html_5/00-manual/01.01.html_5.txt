@@ -22,6 +22,8 @@
 16.04. HTML5 - <rect> tag - (rect/rectangle)
 16.05. HTML5 - <line> tag 
 16.06. HTML5 - <polyline> tag 
+16.07. HTML5 - <ellipse> tag 
+
 
 
 .
@@ -996,6 +998,45 @@ console.log(document.cookie)
 --- example: ellipse
     <16.07.01_tag__svg_ellipse.html>
     <16.07.02_tag__svg_ellipse.html>
+
+.
+.
+16.08. HTML5 - <polygon> tag 
+
+- polygon - polygon mean "many angles" (poly = many, gon = angles).
+
+- The <polygon> element defines a closed shape consisting of a set of connected straight line segments with at least three lines. 
+  "close shape" mean that The polygon element closes off the shape for you (The last point is connected to the first point).
+
+
+- <polygon> tag parameters:
+
+-- points
+   This attribute defines the list of points (pairs of x,y absolute coordinates) required to draw the polygon.
+   Value type: <number>+ 
+   Default value: ""
+   Animatable: yes
+
+-- pathLength
+   This attribute lets specify the total length for the path, in user units.
+   Value type: <number>
+   Default value: none
+   Animatable: yes
+
+
+--- example: polygon parameters: (x y replaced by numbers)
+    <polygon points="x y, x y, x y" fill=none/color stroke=color stroke-width=width />
+
+
+--- example: polygon
+   <polygon points="100 100, 200 200, 300 20" style="fill: green; stroke:red; stroke-width: 6;" />
+    <polygon points="100 400, 200 400, 150 300" fill=none stroke=red stroke-width= 6 />
+
+
+--- example: polygon
+    <16.08.01_tag__svg_polygon.html>
+    <16.08.02_tag__svg_polygon.html>
+
 
 
 ----[todo]-----

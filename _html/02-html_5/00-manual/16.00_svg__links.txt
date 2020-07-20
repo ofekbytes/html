@@ -17,13 +17,10 @@ https://developer.mozilla.org/en-US/docs/Web/SVG/Element/line
 <!-- polyline -->
 https://developer.mozilla.org/en-US/docs/Web/SVG/Element/polyline
 
-<!-- ellipse --> **
+<!-- ellipse --> 
 https://developer.mozilla.org/en-US/docs/Web/SVG/Element/ellipse
 
-
-
-
-<!-- polygon --> **
+<!-- polygon --> 
 https://developer.mozilla.org/en-US/docs/Web/SVG/Element/polygon
 
 
