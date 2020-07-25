@@ -1131,12 +1131,12 @@ console.log(document.cookie)
 
 .
 .
-16.10. HTML5 - <Paths> tag 
+16.10. HTML5 - <paths> tag 
 
--  <Paths> - <path> tag define a shape/path.
+-  <paths> - <path> tag define a shape/path.
 
 
-- <Paths> tag parameters:
+- <paths> tag parameters:
 
 -- d - This attribute defines the shape of the path.
        Value type: <string> 
@@ -1163,8 +1163,8 @@ console.log(document.cookie)
    Animatable: yes
 
 
--- "fill" - determines the color of our Paths (default "black")
--- "stroke" - adds an outline to the Paths
+-- "fill" - determines the color of our paths (default "black")
+-- "stroke" - adds an outline to the paths
 -- "stroke-width" - stroke width
 
 -!- All of the above commands can be expressed with lowercase or uppercase letters.
@@ -1173,16 +1173,13 @@ console.log(document.cookie)
 
 
 /// todo ///
---- example: Paths parameters:
+--- example: paths parameters:
     // 0 0 - start point
     // L - lineto 100 100
     // L - lineto 100 0
     // Z - closepath
     <path d="M 0 0 L100 100 L100 0 Z" style="stroke:#000;  fill:none;" />
-    
-    /// <ellipse cx="0" cy="300" rx="100" ry="50" fill="yellow" stroke="red" stroke-width="6">
-    /// <animate attributeName="cx" from="x" to="x+value" dur="time-in-second" fill="freeze/value" repeatCount="couynter/indefinite" />
-    /// </ellipse>
+
 
 
 --- example:  heart shape
@@ -1208,7 +1205,7 @@ console.log(document.cookie)
 
 
 ////!////
-TODO <Paths> tag  is not compilte 
+TODO <paths> tag  is not compilte 
 /////
 
 
