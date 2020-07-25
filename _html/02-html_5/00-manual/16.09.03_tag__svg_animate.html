@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>svg animate</title>
+    <style>
+      html,
+      body,
+      svg {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>heartbeat</h1>
+
+    <svg width="2000" height="1000">
+        <rect width="300" height="300" rx=0> 
+          <animate attributeName="rx" values="0;160;0" dur="1s" repeatCount="indefinite" />
+        </rect>
+    </svg>
+  </body>
+
+</html>

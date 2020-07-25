@@ -23,7 +23,9 @@
 16.05. HTML5 - <line> tag 
 16.06. HTML5 - <polyline> tag 
 16.07. HTML5 - <ellipse> tag 
-
+16.08. HTML5 - <polygon> tag
+16.09. HTML5 - <animate> tag 
+16.10. HTML5 - <Paths> tag 
 
 
 .
@@ -1043,6 +1045,173 @@ console.log(document.cookie)
 --- example: polygon
     <16.08.01_tag__svg_polygon.html>
     <16.08.02_tag__svg_polygon.html>
+
+.
+.
+16.09. HTML5 - <animate> tag 
+
+-  <animate> tag is a SVG animations.
+
+
+- <animate> tag parameters:
+
+-- Animation timing attributes
+   begin, dur, end, min, max, restart, repeatCount, repeatDur, fill
+
+-- Animation value attributes
+   calcMode, values, keyTimes, keySplines, from, to, by
+
+-- Other Animation attributes
+   Most notably: attributeName, additive, accumulate
+
+-- Animation event attributes
+   Most notably: onbegin, onend, onrepeat
+
+-- attributeName: shape attribute that will be affected by the animation
+
+-1- shape eclipse - "cx"
+    ellipse cx="0"
+-2- animate the shape with the attribute Name attribute name - "cx"
+    <animate attributeName="cx"
+
+-- from: starting animate point for the value attribute.
+
+-- to: ending animate point for the value attribute.
+
+-- dur: (duration) how long the animation  will run.
+
+-- fill: return the animation to the starting point location or freeze the animation in the end point location
+         "Values" - return the animation to the starting point location at the end of the animation
+         "freeze" - freeze the animation in the end point location at the end of the animation
+
+-- repeatCount - animation repeat count (how many time the animation will execute) 
+   1 -  run animation once 
+   2 -  twice 
+   indefinite -  run animation none stop.
+
+
+--- example: animate - repeatCount - indefinite - run animation twice and freeze.
+    <svg width="2000" height="1000">
+      <ellipse cx="0" cy="100" rx="100" ry="50" fill="yellow" stroke="red" stroke-width="6">
+        <animate attributeName="cx" from="10" to="1000" dur="3s" fill="freeze" repeatCount="2" />
+      </ellipse>
+    </svg>
+
+
+--- example: animate - repeatCount - indefinite - run animation none stop and return to starting animate point.
+    <svg width="2000" height="1000">
+      <ellipse cx="0" cy="100" rx="100" ry="50" fill="yellow" stroke="red" stroke-width="6">
+        <animate attributeName="cx" from="10" to="1000" dur="3s" fill="values" repeatCount="indefinite" />
+      </ellipse>
+    </svg>
+
+
+--  values - The value holds a semicolon-separated list of one or more values. 
+    values="0;15;0"
+
+
+--- example: animate parameters:
+    <ellipse cx="0" cy="300" rx="100" ry="50" fill="yellow" stroke="red" stroke-width="6">
+        <animate attributeName="cx" from="x" to="x+value" dur="time-in-second" fill="freeze/value" repeatCount="couynter/indefinite" />
+    </ellipse>
+
+
+
+--- example: create a triangle and change its position every 3 second. 
+    <svg width="2000" height="1000">
+      <ellipse cx="0" cy="100" rx="100" ry="50" fill="yellow" stroke="red" stroke-width="6">
+        <animate attributeName="cx" from="10" to="1000" dur="3s" fill="freeze" repeatCount="2" />
+      </ellipse>
+    </svg>
+
+
+--- example: create a triangle and change its position every 3 second. 
+    <16.09.01_tag__svg_animate.html>
+    <16.09.02_tag__svg_animate.html>
+
+.
+.
+16.10. HTML5 - <Paths> tag 
+
+-  <Paths> - <path> tag define a shape/path.
+
+
+- <Paths> tag parameters:
+
+-- d - This attribute defines the shape of the path.
+       Value type: <string> 
+       Default value: ''
+       Animatable: yes
+
+-- d - 
+--- M: moveto
+--- L: lineto
+--- H: horizontal lineto
+--- V: vertical lineto
+--- C: curveto
+--- S: smooth curveto
+--- Q: quadratic Bézier curve
+--- T: smooth quadratic Bézier curveto
+--- A: elliptical Arc
+--- Z: closepath
+
+
+-- pathLength
+   This attribute lets authors specify the total length for the path, in user units.
+   Value type: <number> 
+   Default value: none
+   Animatable: yes
+
+
+-- "fill" - determines the color of our Paths (default "black")
+-- "stroke" - adds an outline to the Paths
+-- "stroke-width" - stroke width
+
+-!- All of the above commands can be expressed with lowercase or uppercase letters.
+--- uppercase letters - indicates absolute position.
+--- lowercase letters - indicates relative position.
+
+
+/// todo ///
+--- example: Paths parameters:
+    // 0 0 - start point
+    // L - lineto 100 100
+    // L - lineto 100 0
+    // Z - closepath
+    <path d="M 0 0 L100 100 L100 0 Z" style="stroke:#000;  fill:none;" />
+    
+    /// <ellipse cx="0" cy="300" rx="100" ry="50" fill="yellow" stroke="red" stroke-width="6">
+    /// <animate attributeName="cx" from="x" to="x+value" dur="time-in-second" fill="freeze/value" repeatCount="couynter/indefinite" />
+    /// </ellipse>
+
+
+--- example:  heart shape
+    <path d="M 10,30
+            A 20,20 0,0,1 50,30
+            A 20,20 0,0,1 90,30
+            Q 90,60 50,90
+            Q 10,60 10,30 z"/>
+    </svg>
+
+
+--- example: triangular
+    <svg width="300" height="300"> 
+      <path d="M150 0 L75 200 L225 200 Z" />
+    </svg>
+
+
+--- example: path
+    <16.10.01_tag__svg_path.html>
+    <16.10.02_tag__svg_path.html>
+
+
+
+
+////!////
+TODO <Paths> tag  is not compilte 
+/////
+
+
 
 
 

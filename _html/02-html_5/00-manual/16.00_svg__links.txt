@@ -2,6 +2,10 @@
 
 ---[links]----
 
+<!-- SVG attributes A to Z -->
+https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute#Animation_Timing_Attributes
+
+
 <!-- circle, rectangle,  -->
 https://www.w3schools.com/html/html5_svg.asp
 
@@ -23,9 +27,20 @@ https://developer.mozilla.org/en-US/docs/Web/SVG/Element/ellipse
 <!-- polygon --> 
 https://developer.mozilla.org/en-US/docs/Web/SVG/Element/polygon
 
+<!-- animate --> 
+https://developer.mozilla.org/en-US/docs/Web/SVG/Element/animate
+
+
 
 <!-- path --> **
 https://developer.mozilla.org/en-US/docs/Web/SVG/Element/path
+
+https://www.w3schools.com/graphics/svg_path.asp
+
+https://www.w3schools.com/graphics/tryit.asp?filename=trysvg_path2
+
+
+
 
 <!-- image --> **
 https://developer.mozilla.org/en-US/docs/Web/SVG/Element/image
@@ -33,6 +48,24 @@ https://developer.mozilla.org/en-US/docs/Web/SVG/Element/image
 
 <!-- use --> **
 https://developer.mozilla.org/en-US/docs/Web/SVG/Element/use
+
+
+<!-- text --> **
+https://www.w3schools.com/graphics/svg_text.asp
+
+https://developer.mozilla.org/en-US/docs/Web/SVG/Element/text
+
+
+<!-- text - tspan --> ** // subtext
+https://developer.mozilla.org/en-US/docs/Web/SVG/Element/tspan
+
+
+<!-- textPath ** -->
+https://developer.mozilla.org/en-US/docs/Web/SVG/Element/textPath
+
+
+<!-- title -->  ** /// title=popup
+https://developer.mozilla.org/en-US/docs/Web/SVG/Element/title
 
 
 
