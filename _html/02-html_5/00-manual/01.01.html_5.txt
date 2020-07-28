@@ -1200,15 +1200,13 @@ console.log(document.cookie)
 --- example: path
     <16.10.01_tag__svg_path.html>
     <16.10.02_tag__svg_path.html>
-
+    <16.10.03_tag__svg_path.html>
 
 
 
 ////!////
 TODO <paths> tag  is not compilte 
 /////
-
-
 
 
 
