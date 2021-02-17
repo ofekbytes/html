@@ -1,0 +1,20 @@
+continue here
+
+// todo
+// 1.add meta tag to my web pages
+
+
+// example: 
+
+//meta
+https://www.w3schools.com/tags/tag_meta.aspat
+https://www.w3schools.com/tags/tryit.asp?filename=tryhtml_meta
+
+http://127.0.0.1:5500/_html/01-html_4/00-manual/11.99_tag__form-contact-me.html
+
+https://www.w3schools.com/html/html_emojis.asp
+
+https://www.w3schools.com/bootstrap/bootstrap_ver.asp
+
+
+

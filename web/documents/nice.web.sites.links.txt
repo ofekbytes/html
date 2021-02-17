@@ -1,0 +1,9 @@
+
+
+---[nice.web.sites.links]------------
+
+
+https://docs.oracle.com/cd/E14004_01/books/SystAdm/SystAdm_SrvrArch2.html
+
+https://docs.oracle.com/cd/E14004_01/books/SystAdm/SystAdm_SrvrArch.html
+
