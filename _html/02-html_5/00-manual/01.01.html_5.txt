@@ -117,10 +117,10 @@ Defines the scope of headings, content, navigation, and footers.
 Elements: <article>, <aside>, <nav>, <section>
 
 --- example: Content Models:
-    <html5-Content-Models.jpeg>
+    <https://ofekbytes.github.io/assets/unsorted/delete-icons/diagram/html5-Content-Models.jpeg>
 
 --- example: A generic HTML5 page structure looks like this:
-    <HTML5-page-structure.png>
+    <https://ofekbytes.github.io/assets/unsorted/delete-icons/diagram/HTML5-page-structure.png>
 
 .
 .
