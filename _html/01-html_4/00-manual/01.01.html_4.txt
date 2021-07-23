@@ -149,6 +149,12 @@ CMS: Content Management
 
 --- example: Ordered Lists
 
+    <h2>HTML Ordered List</h2>
+    <ol>
+        <li>one</li>
+        <li>two</li>
+        <li>three</li>
+    </ol>
 
 
 - HTML Unordered List
@@ -165,6 +171,27 @@ CMS: Content Management
 
 --- example:HTML Lists (Ordered List, Unordered Lists)
     <08.01_tag__ol__ul.html>
+
+
+- Attributes
+
+-- "reversed" - list’s items are in reverse order
+
+-- "start" - An integer to start counting from for the list items. 
+
+--- exanmple: start="4"
+
+
+-- type - Sets the numbering type:
+--- "a" - for lowercase letters
+--- "A" - for uppercase letters
+--- "i" - for lowercase Roman numerals
+--- "I" - for uppercase Roman numerals
+--- "1" - for numbers (default)
+
+
+
+
 
 .
 .
