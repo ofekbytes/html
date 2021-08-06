@@ -110,7 +110,7 @@ CMS: Content Management
 
 .
 .
-7. html links <a> tag -
+7. html links <a> tag (anchor element) -
 .
 
 -- Links are also an integral part of every web page. 
@@ -118,6 +118,14 @@ CMS: Content Management
    In HTML, links are defined using the <a> tag.
 
 -!- To link an image to another document, simply nest the <img> tag inside <a> tags.
+
+-- example: 
+    <a href="url> link text</a>
+    
+-- example description
+--- html element (open & close tag) -->  <a> </a>
+--- html attribute -->  <a href="url">
+--- htmk link text -->  <a>link text</a>
 
 --- example:
     
@@ -137,6 +145,9 @@ CMS: Content Management
 
 --- example: html image <img> tag
     <07.01_tag__a.html>
+
+--- html <a> links - (anchor element) -
+    https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a?retiredLocale=he
 
 .
 .
@@ -188,10 +199,6 @@ CMS: Content Management
 --- "i" - for lowercase Roman numerals
 --- "I" - for uppercase Roman numerals
 --- "1" - for numbers (default)
-
-
-
-
 
 .
 .
