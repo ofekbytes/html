@@ -125,7 +125,7 @@ CMS: Content Management
 -- example description
 --- html element (open & close tag) -->  <a> </a>
 --- html attribute -->  <a href="url">
---- htmk link text -->  <a>link text</a>
+--- html link text -->  <a>link text</a>
 
 --- example:
     
