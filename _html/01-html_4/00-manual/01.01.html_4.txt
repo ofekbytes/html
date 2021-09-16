@@ -120,11 +120,12 @@ CMS: Content Management
 -!- To link an image to another document, simply nest the <img> tag inside <a> tags.
 
 -- example: 
-    <a href="url> link text</a>
+    <a href="url"> link text</a>
     
 -- example description
 --- html element (open & close tag) -->  <a> </a>
---- html attribute -->  <a href="url">
+--- html attribute (href) -->  <a href="url">
+--- "url" - Link Destination.
 --- html link text -->  <a>link text</a>
 
 --- example:

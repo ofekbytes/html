@@ -1,0 +1,21 @@
+
+
+----[url]------------
+
+// yaron - "y" icon
+<link rel="icon" href="https://ofekbytes.github.io/assets/icons/ico/y.ico" />
+
+// yaron moon
+<link rel="icon" href="https://ofekbytes.github.io/assets/images/picture/yamon.jpg" />
+
+// yaron star
+<link rel="icon" href="https://ofekbytes.github.io/assets/images/picture/star.jpg" />
+
+// kessler.yaron profile picture
+<link rel="icon" href="https://ofekbytes.github.io/assets/kessler.yaron/kessler.yaron.200px.jpeg" />
+
+// kessler.yaron profile picture
+<link rel="icon" href="https://ofekbytes.github.io/assets/kessler.yaron/kessler.yaron-circle.png" />
+
+
+
