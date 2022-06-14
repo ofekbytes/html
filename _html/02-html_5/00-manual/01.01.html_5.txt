@@ -132,7 +132,7 @@ Elements: <article>, <aside>, <nav>, <section>
 --- logo or icon
 --- authorship information
 --- You can have several <header> elements in one document.
--!- A <header> tag cannot be placed within a <footer>, <address> or another <header> element.
+-!- A <header> tag cannot be placed within a <footer>, <address>, <header> element.
 
 - header html4 style:
   <div id="header">
