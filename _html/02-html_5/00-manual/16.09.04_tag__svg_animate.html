@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>svg animate</title>
+  <style>
+    html,
+    body,
+    svg {
+      height: 100%;
+      margin: 0;
+      padding: 0;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>square</h1>
+
+  <svg width="1000" height="250">
+    <rect width="150" height="150" fill="orange">
+      <animate attributeName="x" from="0" to="500" dur="2s" fill="freeze" repeatCount="3" />
+    </rect>
+  </svg>
+
+</body>
+
+</html>

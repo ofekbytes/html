@@ -17,15 +17,18 @@
 14. HTML5 - API - Geolocation (GPS)
 15. HTML5 - API -- Drag -and- Drop
 16. HTML5 - SVG
-16.02. HTML5 - <svg> tag 
-16.03. HTML5 - <circle> tag
-16.04. HTML5 - <rect> tag - (rect/rectangle)
-16.05. HTML5 - <line> tag 
-16.06. HTML5 - <polyline> tag 
-16.07. HTML5 - <ellipse> tag 
-16.08. HTML5 - <polygon> tag
-16.09. HTML5 - <animate> tag 
-16.10. HTML5 - <Paths> tag 
+16.02. HTML5 - <svg> tag
+16.03. SVG - <circle> tag
+16.04. SVG - <rect> tag - (rect/rectangle)
+16.05. SVG - <line> tag 
+16.06. SVG - <polyline> tag 
+16.07. SVG - <ellipse> tag 
+16.08. SVG - <polygon> tag
+16.09. SVG - <animate> tag 
+16.10. SVG - <Paths> tag 
+16.11. SVG - <text> tag 
+
+
 
 
 .
@@ -751,7 +754,7 @@ console.log(document.cookie)
 
 .
 .
-16.03. HTML5 - <circle> tag
+16.03. SVG - <circle> tag
 
 - drawing circle - drawing circle with <circle> tag inside <svg> tag.
 
@@ -803,7 +806,7 @@ console.log(document.cookie)
 
 .
 .
-16.04. HTML5 - <rect> tag - (rect/rectangle)
+16.04. SVG - <rect> tag - (rect/rectangle)
 
 - drawing rectangle - drawing rectangle with <rect> tag inside <svg> tag.
 
@@ -867,7 +870,7 @@ console.log(document.cookie)
 
 .
 .
-16.05. HTML5 - <line> tag 
+16.05. SVG - <line> tag 
 
 - The <line> tag used to create a line connecting two points.
 
@@ -918,7 +921,7 @@ console.log(document.cookie)
 
 .
 .
-16.06. HTML5 - <polyline> tag 
+16.06. SVG - <polyline> tag 
 
 - the <polyline> tag defines shapes built from multiple line definitions:
 
@@ -954,7 +957,7 @@ console.log(document.cookie)
 
 .
 .
-16.07. HTML5 - <ellipse> tag 
+16.07. SVG - <ellipse> tag 
 
 - The <ellipse> tag, create ellipses based on a center coordinate, and both their x and y radius.
   (horizontal, vertical, rx, ry, attributes).
@@ -1006,7 +1009,7 @@ console.log(document.cookie)
 
 .
 .
-16.08. HTML5 - <polygon> tag 
+16.08. SVG - <polygon> tag 
 
 - polygon - polygon mean "many angles" (poly = many, gon = angles).
 
@@ -1048,7 +1051,7 @@ console.log(document.cookie)
 
 .
 .
-16.09. HTML5 - <animate> tag 
+16.09. SVG - <animate> tag 
 
 -  <animate> tag is a SVG animations.
 
@@ -1087,7 +1090,7 @@ console.log(document.cookie)
 -- repeatCount - animation repeat count (how many time the animation will execute) 
    1 -  run animation once 
    2 -  twice 
-   indefinite -  run animation none stop.
+   "indefinite" -  run animation none stop.
 
 
 --- example: animate - repeatCount - indefinite - run animation twice and freeze.
@@ -1129,9 +1132,20 @@ console.log(document.cookie)
     <16.09.01_tag__svg_animate.html>
     <16.09.02_tag__svg_animate.html>
 
+
+--- example: rect tag animation (square)
+    <svg width="1000" height="250">
+        <rect width="150" height="150" fill="orange">
+            <animate attributeName="x" from="0" to="500" dur="2s" fill="freeze" repeatCount="3"/> 
+        </rect>
+    </svg>
+
+
+--- example: rect tag animation (square)
+    <16.09.04_tag__svg_animate.html>
 .
 .
-16.10. HTML5 - <paths> tag 
+16.10. SVG - <paths> tag 
 
 -  <paths> - <path> tag define a shape/path.
 
@@ -1172,14 +1186,12 @@ console.log(document.cookie)
 --- lowercase letters - indicates relative position.
 
 
-/// todo ///
 --- example: paths parameters:
     // 0 0 - start point
     // L - lineto 100 100
     // L - lineto 100 0
     // Z - closepath
     <path d="M 0 0 L100 100 L100 0 Z" style="stroke:#000;  fill:none;" />
-
 
 
 --- example:  heart shape
@@ -1202,15 +1214,51 @@ console.log(document.cookie)
     <16.10.02_tag__svg_path.html>
     <16.10.03_tag__svg_path.html>
     <16.10.04_tag__svg_path>
+.
+.
+16.11. SVG - <text> tag 
+
+-  <text> - <text> element is used to define a text.
+
+- <text> tag parameters:
+
+-- x: The  x  starting point of the text (horizontally).
+-- y: The  y  starting point of the text (vertically).
+-- dx: Shifts the text position horizontally.
+-- dy: Shifts the text position vertically.
+-- rotate: Rotates orientation of each individual glyph.
+-- lengthAdjust: text is stretched/compressed to fit the width defined by the textLength attribute.
+-- textLength: A width that the text should be scaled to fit. 
 
 
-////!////
-TODO <paths> tag  is not compilte 
-/////
+--- example: text
+    <16.11.01_tag__svg_text.html>
+    <16.11.02_tag__svg_text.html>
+    <16.11.03_tag__svg_text.html>
+
+//svg link
+https://www.w3.org/2000/svg
 
 
+//continue here
+https://www.w3schools.com/graphics/svg_text.asp
+
+//mozilla
+https://developer.mozilla.org/en-US/docs/Web/SVG/Element/text
+
+///other subject ??
+<altglyph>
+<altglyphdef>
+<altglyphitem>
+<glyph>
+<glyphref>
+<text>
+<textpath>
+<tref>
+<tspan>
 
 
+---------------------------------------------------------------------------------------------------
 
 ----[todo]-----
 
@@ -1240,6 +1288,5 @@ if there in the right subject
 
 /// TODO #3:
 
------------------------------------------------------------------------------
-
+---------------------------------------------------------------------------------------------------
 
