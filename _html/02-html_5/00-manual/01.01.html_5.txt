@@ -27,7 +27,10 @@
 16.09. SVG - <animate> tag 
 16.10. SVG - <Paths> tag 
 16.11. SVG - <text> tag 
-
+16.12. SVG - <textpath> tag 
+16.13. SVG - <tabindex> tag
+17. HTML5 - canvas
+17.01. canvas - <fillRect> tag - (rectangle)
 
 
 
@@ -1220,7 +1223,7 @@ console.log(document.cookie)
 
 -  <text> - <text> element is used to define a text.
 
-- <text> tag parameters:
+- <text> tag Attributes:
 
 -- x: The  x  starting point of the text (horizontally).
 -- y: The  y  starting point of the text (vertically).
@@ -1230,6 +1233,13 @@ console.log(document.cookie)
 -- lengthAdjust: text is stretched/compressed to fit the width defined by the textLength attribute.
 -- textLength: A width that the text should be scaled to fit. 
 
+Core Attributes: 
+Most notably: id, tabindex
+
+Styling Attributes
+class, style, font-family, font-size, font-size-adjust, font-stretch, font-style, font-variant, font-weight
+Conditional Processing Attributes
+Most notably: requiredExtensions, systemLanguage
 
 --- example: text
     <16.11.01_tag__svg_text.html>
@@ -1238,6 +1248,157 @@ console.log(document.cookie)
 
 //svg link
 https://www.w3.org/2000/svg
+.
+.
+16.12. SVG - <textpath> tag 
+
+- To render text along the shape of a <path>, enclose the text in a <textPath> element 
+  that has an href attribute with a reference to the <path> element.
+
+- <textpath> tag Attributes:
+
+-- href: The URL to the path or basic shape on which to render the text. 
+         If the path attribute is set, href has no effect. 
+         Value type: <URL> ; Default value: none; Animatable: yes
+
+-- lengthAdjust: Where length adjustment should be applied to the text: 
+                 the space between glyphs, or both the space and the glyphs themselves. 
+                 Value type: spacing|spacingAndGlyphs; Default value: spacing; Animatable: yes
+
+-- method: Which method to render individual glyphs along the path. 
+           Value type: align|stretch ; Default value: align; Animatable: yes
+
+-- path: The path on which the text should be rendered. 
+         Value type: <path_data> ; Default value: none; Animatable: yes
+
+-- side: Which side of the path the text should be rendered. 
+         Value type: left|right ; Default value: left; Animatable: yes
+
+-- spacing: How space between glyphs should be handled. 
+            Value type: auto|exact ; Default value: exact; Animatable: yes
+
+-- startOffset: How far the beginning of the text should be offset from the beginning of the path. 
+                Value type: <length>|<percentage>|<number> ; Default value: 0; Animatable: yes
+
+-- textLength: The width of the space into which the text will render. 
+               Value type: <length>|<percentage>|<number> ; Default value: auto; Animatable: yes
+
+--- example: <textpath> tag
+
+    <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+
+  <!-- to hide the path, it is usually wrapped in a <defs> element -->
+  <!-- <defs> -->
+  <path id="MyPath" fill="none" stroke="red"
+        d="M10,90 Q90,90 90,45 Q90,10 50,10 Q10,10 10,40 Q10,70 45,70 Q70,70 75,50" />
+  <!-- </defs> -->
+
+  <text>
+    <textPath href="#MyPath">
+      Quick brown fox jumps over the lazy dog.
+    </textPath>
+  </text>
+
+</svg>
+
+
+--- example: <textpath> tag
+    <16.12.01_tag__svg_textpath.html>
+.
+.
+16.13. SVG - <tabindex> tag 
+
+-  The tabindex attribute allows you to control whether an element is focusable 
+   and to define the relative order of the element for the purposes of sequential focus navigation.
+
+-- tabindex= "Value": valid integer
+
+
+--- example: tabindex
+    <?xml version="1.0"?>
+    <svg viewBox="0 0 260 260" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="60" cy="60" r="15" tabindex="1" />
+        <circle cx="60" cy="160" r="30" tabindex="3" />
+        <circle cx="160" cy="60" r="30" tabindex="2" />
+        <circle cx="160" cy="160" r="60" tabindex="4" />
+    </svg>
+
+
+--- example: tabindex
+    <16.13.01_tag__svg_tabindex.html>
+.
+. 
+17. HTML5 - canvas
+
+- The HTML canvas is used to draw graphics (simple line to graphic objects)
+
+--- example: <canvas> tag
+    <canvas id="canvas1" width="200" height="100">
+    </canvas>
+
+-- The <canvas> element is only a container for graphics. 
+   JavaScript uses the canvas "id" Attributes to draw graphics inside the canvas.
+
+--- example: canvas
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>canvas</title>
+    <style>
+        canvas {
+        border: 2px dotted blue;
+        padding: 20px 10px;
+        }
+    </style>
+    </head>
+    <body>
+    <h1>canvas</h1>
+    <canvas id="canvas1" width="400" height="300"></canvas> 
+    <script>
+        var can = document.getElementById("canvas1"); 
+        var ctx = can.getContext("2d");
+    </script>
+    </body>
+    </html>
+
+--- example: canvas
+    <17.00.01_tag__canvas.html>
+
+-- The <canvas> element is a two-dimensional grid (X,Y).
+--- The upper-left corner of the canvas equal to (X=0,Y=0)
+--- X = horizontal
+--- Y = vertically
+
+     X
++----------+
+|          |
+|          | Y
+|          |
++----------+
+
+//// continue here
+//// 39.1 Lesson
+
+
+.
+.
+17.01. canvas - <fillRect> tag - (rectangle)
+
+- The fillRect(x, y, w, h) method draws a "filled" rectangle.
+
+- <fillRect> tag Attributes:
+
+-- x: The  x  starting point of the fillRect.
+-- y: The  y  starting point of the fillRect.
+-- w: The width.
+-- h: The height.
+
+--- example: canvas
+    <17.01.01_tag__canvas_fillRect.html>
+
+
 
 
 //continue here
@@ -1246,17 +1407,8 @@ https://www.w3schools.com/graphics/svg_text.asp
 //mozilla
 https://developer.mozilla.org/en-US/docs/Web/SVG/Element/text
 
-///other subject ??
-<altglyph>
-<altglyphdef>
-<altglyphitem>
-<glyph>
-<glyphref>
-<text>
-<textpath>
-<tref>
-<tspan>
 
+https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/tabindex
 
 ---------------------------------------------------------------------------------------------------
 
