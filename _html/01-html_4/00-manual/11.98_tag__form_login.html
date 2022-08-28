@@ -12,7 +12,7 @@
 
     <h1>form</h1>
 
-    <form action="https://ofekbytes.github.io/assets/" method="POST">
+    <form action="http://localhost:8080" method="POST">
         <!-- user: -->
         <label for="userName">User Name:</label> <br/>
         <input type="text" name="userName" id="userName" />
@@ -25,12 +25,12 @@
         <br />
         <br />
 
-        <input type="radio" name="gender" value="male" checked /> Male <br />
-        <input type="radio" name="gender" value="female" /> Female <br />
+        <input type="radio" id="chk_male" name="gender" value="male" checked /> <label for="chk_male">Male</label> <br />
+        <input type="radio" id="chk_female" name="gender" value="female" /> <label for="chk_female">Female</label>  <br />
 
         <br />
-        <input type="checkbox" name="gender" value="1" /> Male <br />
-        <input type="checkbox" name="gender" value="2" checked /> Female <br />
+        <input type="checkbox" id="radio_male" name="gender" value="1" /> <label for="radio_male">Male</label>  <br />
+        <input type="checkbox" id="radio_female" name="gender" value="2" checked /> <label for="radio_female">Female</label> <br />
 
         <br /><br />
         <input type="submit" value="Submit" />

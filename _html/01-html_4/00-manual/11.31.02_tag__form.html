@@ -1,0 +1,60 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <!-- charset -->
+    <meta charset="UTF-8">
+    <title>11.31.02_tag__form</title>
+</head>
+<body>
+    <h1>Add a Customer</h1>
+    <hr/>
+    <br />
+
+    <form action="http://localhost:8080" method="POST">
+        <!-- first_name: -->
+        <label for="first_name">First Name: </label> 
+        <input type="text" name="first_name" id="first_name" placeholder="Enter a First Name" />
+
+        <br /><br />
+        <!-- last_name: -->
+        <label for="last_name">Last Name: </label>
+        <input type="text" name="last_name" id="last_name" placeholder="Enter a Last Name" />
+
+
+        
+        <br /><br />
+        <input type="radio" id="chk_male" name="gender" value="male" checked /> <label for="chk_male">Male</label>
+        <input type="radio" id="chk_female" name="gender" value="female" /> <label for="chk_female">Female</label>
+
+        <br /><br />
+        <label for="email">Email:</label>
+        <input type="email" name="email" id="email" placeholder="demo@mailbox.com" />
+
+        <br /><br />
+        <label for="phone">Phone:</label>
+        <input type="tel" name="phone" id="phone" placeholder="Enter a phone" />
+
+        <br /><br />
+        <label for="birthday">Birthday:</label>
+        <input type="date" name="birthday" id="birthday" placeholder="Enter an Birthday" min="1970-01-01" max="2021-01-01"/>
+
+        <br /><br />
+        <label for="quantity">Quantity:</label>
+        <input type="number" name="quantity" id="quantity" placeholder="1-20" min="1" max="20" value= "1" />
+
+        <br /><br />
+        <label for="payment">Payment: </label>
+        <select id="payment" name="payment">
+            <option value="visa"> Visa</option>
+            <option value="mastercard"> Mastercard</option>
+            <option value="lifestyle"> LifeStyle</option>
+        </select>
+
+
+
+        <br /><br />
+        <input type="reset" value="reset" />
+        <input type="submit" value="Submit" />
+    </form>
+</body>
+</html>

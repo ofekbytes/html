@@ -13,7 +13,8 @@
 10. HTML Inline and Block Elements
 11. HTML Form tag
 12. HTML Colors
-13. HTML The <frame> Tag
+13. HTML <frame> Tag
+14. HTML <button>
 .
 .
 1. HTML - 
@@ -600,7 +601,7 @@ orange+red - #C1250F
 
 .
 .
-13. HTML The <frame> Tag - 
+13. HTML <frame> Tag - 
 .
 
 -!- The <frameset> tag is not supported in HTML5.
@@ -639,4 +640,9 @@ orange+red - #C1250F
 
 --- example: frameset/frame.
     <13.01_tag__frameset__frame.html>
+
+.
+.
+14. HTML <button>
+.
 

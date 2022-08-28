@@ -50,6 +50,7 @@
                 <li><sup> superscripted text </sup></li>
                 <li><ins> inserted text </ins></li>
                 <li><del> deleted text </del></li>
+                <li>And <mark> marked</mark> text </li>
             </ul>
             <hr width="60%" align="right">
         </div>
@@ -110,8 +111,10 @@
             </code>
         </pre>
         </div>
-
+        
+        <hr/>
         <div>
+            <h3>Character Entities</h3>
             <!-- Character Entities :  -->
             <!-- http://dev.w3.org/html5/html-author/charref -->
             &cent;
@@ -125,15 +128,15 @@
             &frac34;
             &sup2;
         </div>
-
+        <hr/>
 
         <div> 3<sup>2</sup> = 9 </div>
 
         <div> O<sub>2</sub> </div>
 
         <div>
-           <div><bdo dir="rtl">שלום</bdo></div>
-           <div><bdo dir="lrt">שלום</bdo></div>
+            <div><bdo dir="rtl">שלום</bdo></div>
+            <div><bdo dir="lrt">שלום</bdo></div>
         </div>
 
         <p>
@@ -143,23 +146,55 @@
 
         <p>
             <!-- gif -->
-            <img id="pleaseWait2" src="https://ofekbytes.github.io/assets/images/picture/star.jpg" width="237" height="178" alt="star"><br>
+            <img id="pleaseWait2" src="https://ofekbytes.github.io/assets/images/picture/star.jpg" width="237"
+                height="178" alt="star"><br>
         </p>
 
         <div>
             <!-- gif -->
-            <img id="pleaseWait2" src="https://ofekbytes.github.io/assets/icons/animation/wait.gif" width="237" height="178" alt="please wait icon">
+            <img id="pleaseWait2" src="https://ofekbytes.github.io/assets/icons/animation/wait.gif" width="237"
+                height="178" alt="please wait icon">
+        </div>
+
+        <hr/>
+        <div>
+            <a href="./star.jpg" download>
+                download with original file name
+            </a>
+        </div>
+        <div>
+            <a href="./star.jpg" download="download_01.jpg">
+                download with different file name
+            </a>
+        </div>
+        <div>
+            <a href="./star.jpg" download="download_01.jpg">
+                <img src="./star.jpg" width="237" height="178" alt="star">
+            </a>
+        </div>
+        <hr/>
+
+        <div>
+            <!-- change name and download -->
+            <a href="./star.jpg" download="download_01.jpg">
+                <img src="./star.jpg" width="237" height="178" alt="star">
+            </a>
         </div>
 
         <!-- PDF file -->
         <p>
-            <object data="https://ofekbytes.github.io/assets/document/welcome.pdf" type="application/pdf" width="1250" height="600">
-            
+            <object data="https://ofekbytes.github.io/assets/document/welcome.pdf" type="application/pdf" width="1250"
+                height="600">
+
             </object>
+        </p>
+        <p>
+            <!-- gif -->
+            <img id="pleaseWait1" src="https://ofekbytes.github.io/assets/images/picture/star.jpg" alt="star"><br>
         </p>
 
 
-        
+
     </div>
 </body>
 
