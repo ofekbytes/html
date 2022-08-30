@@ -1,0 +1,29 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <!-- charset -->
+    <meta charset="UTF-8">
+    <title>Login</title>
+</head>
+<body>
+    <h1>Login</h1>
+    <hr/>
+    <br />
+
+    <form action="http://localhost:8080" method="POST">
+
+        <!-- user: -->
+        <label for="user">User: </label> 
+        <input type="text" name="user" id="user" placeholder="Enter a user Name" />
+
+        <br /><br />
+        <!-- last_name: -->
+        <label for="password">Password: </label>
+        <input type="password" name="password" id="password" placeholder="Enter a password" maxlength="12" />
+        <span>max 12 characters</span>
+        <br /><br />
+        <input type="reset" value="reset" />
+        <input type="submit" value="Submit" />
+    </form>
+</body>
+</html>

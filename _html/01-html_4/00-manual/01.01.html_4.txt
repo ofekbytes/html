@@ -14,8 +14,7 @@
 11. HTML Form tag
 12. HTML Colors
 13. HTML <frame> Tag
-14. HTML <button>
-.
+14. HTML gui buttons
 .
 1. HTML - 
 HTML is HyperText Markup Language. 
@@ -643,6 +642,90 @@ orange+red - #C1250F
 
 .
 .
-14. HTML <button>
+14. HTML gui buttons
 .
 
+
+--- example: html <input>
+
+    <form action="" method="post">
+        <input type="button">
+        <input type="checkbox">
+        <input type="color">
+        <input type="date">
+        <input type="datetime-local">
+        <input type="datetime">
+        <input type="email">
+        <input type="file">
+        <input type="hidden">
+        <input type="image">
+        <input type="month">
+        <input type="number">
+        <input type="password">
+        <input type="radio">
+        <input type="range">
+        <input type="reset">
+        <input type="search">
+        <input type="submit">
+        <input type="tel">
+        <input type="text">
+        <input type="time">
+        <input type="url">
+        <input type="week">
+    </form>
+
+
+--- example: html <input>
+
+<11.00_tag__form_input.html>
+<11.01_tag__form_text.html>
+<11.31.01_tag__form_firstName_LastName.html>
+<11.31.02_tag__form_Add_A_Customer.html>
+<11.31.03_tag__form_login.html>
+
+
+--- example: html <button>
+
+<!-- button -->
+<button name="normal" type="button">
+    Button
+</button>
+
+<!-- submit -->
+<button name="Submit_button" type="submit" value="submit">
+    Submit
+</button>
+
+<!-- reset -->
+<button name="reset_button" type="reset" value="reset">
+    Reset
+</button>
+
+<!-- disabled -->
+<button disabled="disabled">
+    Disabled
+</button>
+
+<!-- autofocus - button selected (press 'spacebar' to click the 'autofocus' button) -->
+<button autofocus>
+    autofocus
+</button>
+
+<!-- button 'onclick' event -->
+<button onclick="alert('Alert')">
+    Alert
+</button>
+
+<!-- button 'onclick' event -->
+<button onclick="console.log('button clicked')">
+    console.log
+</button>
+
+<!-- button 'onclick' event -->
+<a href="https://ofekbytes.github.io/clock/">
+    <button>clock</button>
+</a>
+
+
+--- example: html <button>
+<14.01.01_tag__button.html>
