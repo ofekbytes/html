@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>canvas 2 lineTo</title>
+  <title>canvas Circle </title>
   <style>
     canvas {
       border: 2px dotted blue;
@@ -19,14 +19,20 @@
   <script>
     var c = document.getElementById("canvas1");
     var ctx = c.getContext("2d");
-    ctx.beginPath();
-    ctx.moveTo(10,10);
-    ctx.lineTo(30,30);
-    ctx.lineTo(130,30);
-    ctx.lineTo(150,50);
-    ctx.lineWidth = 10;
 
+    /// arc #1
+    ctx.strokeStyle = "#e21010";
+    ctx.beginPath();
+    ctx.arc(100, 75, 50, 0, 1 * Math.PI);
     ctx.stroke();
+
+    /// arc #2
+    ctx.fillStyle = "#e21010";
+    ctx.beginPath();
+    ctx.arc(220, 75, 50, 3, 2 * Math.PI);
+    ctx.fill();
+    ctx.stroke();
+
   </script>
 </body>
 

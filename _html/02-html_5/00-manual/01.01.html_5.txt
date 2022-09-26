@@ -1402,18 +1402,23 @@ https://www.w3.org/2000/svg
 
 .
 .
-17.02. canvas - <beginPath> <moveTo> <lineTo> <stroke> tags - (Line)
+17.02. canvas - <beginPath> <moveTo> <lineTo> <stroke> tags - (Draw a Line)
 
-- lineTo() adds a straight line to the current cavas by connecting the last point to the specified (x, y) coordinates.
+- 
+-- ctx.beginPath()
 
+- From a point
 -- ctx.moveTo(x, y);
 --- x - horizontal starting point.
 --- y - vertically starting point.
 
+- To a point
 -- ctx.lineTo(x, y);
 --- x - horizontal end point.
 --- y - vertically end point.
 
+- Draw the line
+-- ctx.stroke();
 
 --- example: canvas with lineTo
 
@@ -1448,7 +1453,6 @@ https://www.w3.org/2000/svg
 
 </html>
 
-
 --- example: canvas with lineTo
     <17.02.01_tag__canvas_lineTo.html>
 
@@ -1458,26 +1462,98 @@ https://www.w3.org/2000/svg
 --- example: canvas with 2 lineTo lineWidth
     <17.02.03_tag__canvas_lineTo_lineWidth.html>
 
+--- example: canvas with 2 lineTo lineWidth with color 
+    <17.02.04_tag__canvas_lineTo_lineWidth_color.html>
+
+.
+.
+17.02. canvas - <beginPath> <arc> <stroke> tags - (Draw a Circle)
+
+- arc 
+-- ctx.arc(100, 75, 50, 0, 2 * Math.PI);
+-- ctx.arc(x, y, r, sAngle, eAngle * Math.PI);
+--- x - horizontal starting point.
+--- y - vertically starting point.
+--- r - circle radius.
+--- sAngle - The starting angle ("0" = 3 o'clock position).
+--- eAngle - The ending angle, in radians.
+--- counterclockwise - true/false - flase(clockwise), true(counterclockwise)
+
+
+--- example: canvas circle 
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>canvas Circle </title>
+  <style>
+    canvas {
+      border: 2px dotted blue;
+      padding: 20px 10px;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>canvas</h1>
+  <canvas id="canvas1" width="400" height="300"></canvas>
+  <script>
+    var c = document.getElementById("canvas1");
+    var ctx = c.getContext("2d");
+    ctx.beginPath();
+    ctx.arc(100, 75, 50, 0, 2 * Math.PI);
+    ctx.stroke();
+  </script>
+</body>
+
+</html>
+
+
+--- example: canvas circle
+    <17.03.01_tag__canvas_circle.html>
+    <17.03.02_tag__canvas_circle_color.html>
+
+--- example: canvas arc
+    <17.03.02_tag__canvas_arc.html>
+    <17.03.04_tag__canvas_arc_color.html>
+
+.
+.
+17.02. canvas - <createLinearGradient> <gradient> <fillStyle> tags - (color the shape)
+
+- createLinearGradient - color  
+
+
+// TODO: add more example, change current name
+--- example: canvas createLinearGradient
+    <17.04.01_tag__canvas_createLinearGradient_color.html>
+
+
+
+
+----[continue here]------------
+Gradients
+createLinearGradient(x,y,x1,y1): Creates a linear gradient.
+createRadialGradient(x,y,r,x1,y1,r1): Creates a radial/circular gradient.
+
+
+https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D/createLinearGradient
+
+https://www.w3schools.com/graphics/canvas_gradients.asp
+
+----[read more about color]----
+https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API/Tutorial/Applying_styles_and_colors
 
 
 
 ---------------------------------------------------------------------------------------------------
 
 
-----[todo]-----
+----[todo: next step]-----
 
-Draw a Line
-moveTo(x,y): Defines the starting point of the line.
-lineTo(x,y): Defines the ending point of the line.
-
-Draw a Circle
-beginPath(): Starts the drawing.
-arc(x,y,r,start,stop): Sets the parameters of the circle.
-stroke(): Ends the drawing.
-
-Gradients
-createLinearGradient(x,y,x1,y1): Creates a linear gradient.
-createRadialGradient(x,y,r,x1,y1,r1): Creates a radial/circular gradient.
 
 Drawing Text on the Canvas
 Font: Defines the font properties for the text.
@@ -1487,6 +1563,9 @@ strokeText(text,x,y): Draws text on the canvas (no fill).
 
 
 ---------------------------------------------------------------------------------------------------
+
+
+
 
 ----[todo]-----
 

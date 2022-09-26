@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>canvas 2 lineTo</title>
+  <title>canvas Circle </title>
   <style>
     canvas {
       border: 2px dotted blue;
@@ -19,14 +19,21 @@
   <script>
     var c = document.getElementById("canvas1");
     var ctx = c.getContext("2d");
-    ctx.beginPath();
-    ctx.moveTo(10,10);
-    ctx.lineTo(30,30);
-    ctx.lineTo(130,30);
-    ctx.lineTo(150,50);
-    ctx.lineWidth = 10;
 
+    // Create gradient
+    var grd = ctx.createRadialGradient(75, 50, 5, 90, 60, 100);
+    grd.addColorStop(0, "red");
+    grd.addColorStop(1, "white");
+
+    // Fill with gradient
+    ctx.fillStyle = grd;
+    ctx.fillRect(10, 10, 150, 80);
+
+    ctx.beginPath();
+    ctx.arc(100, 75, 50, 0, 2 * Math.PI);
+    ctx.fill();
     ctx.stroke();
+
   </script>
 </body>
 
